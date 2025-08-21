@@ -159,7 +159,7 @@ export default function PortfolioSite() {
     >
       {/* Navbar */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
-        <nav className="max-w-6xl mx-auto px-1 py-5 flex items-center justify-between">
+        <nav className="max-w-7xl mx-auto px-1 py-5 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Code2 className="h-6 w-6" />
             <span className="font-semibold tracking-tight text-lg">
@@ -219,7 +219,7 @@ export default function PortfolioSite() {
       </header>
 
       {/* Hero */}
-      <section className="max-w-6xl mx-auto px-6 md:px-12 pt-7">
+      <section className="max-w-7xl mx-auto px-6 md:px-12 pt-7">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
