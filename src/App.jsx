@@ -19,7 +19,7 @@ import {
   ArrowUp,
 } from "lucide-react";
 
-const RESUME_URL = "/KAMRAN_Resume.pdf";
+const RESUME_URL = "/resume/KAMRAN_Resume.pdf";
 
 const projects = [
   {
