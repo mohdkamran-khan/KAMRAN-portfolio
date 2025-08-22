@@ -457,7 +457,6 @@ export default function PortfolioSite() {
               className="w-full border rounded-md px-4 py-3 text-base bg-slate-50 dark:bg-slate-700"
               required
             ></textarea>
-
             <div className="flex flex-wrap gap-4 justify-start items-center">
             <button
               type="submit"
@@ -465,7 +464,6 @@ export default function PortfolioSite() {
             >
               <Mail className="h-5 w-5" /> Send Message
             </button>
-          
             <a
               href={RESUME_URL}
               download="KAMRAN_Resume.pdf"
