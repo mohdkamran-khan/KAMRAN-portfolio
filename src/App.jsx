@@ -243,12 +243,12 @@ export default function PortfolioSite() {
               <Phone className="h-5 w-5" /> +91 94151 95895
             </span>
           </div>
-          <div className="flex gap-4 pt-5">
+          <div className="flex flex-wrap gap-2 pt-5 justify-start items-center">
             <a
               href="https://github.com/mohdkamran-khan"
               target="_blank"
               rel="noreferrer"
-              className="px-4 py-2 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
+              className="px-3 py-2 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
             >
               <Github className="h-5 w-5" /> GitHub
             </a>
@@ -256,13 +256,13 @@ export default function PortfolioSite() {
               href="https://www.linkedin.com/in/kamran-khan-316a5937b"
               target="_blank"
               rel="noreferrer"
-              className="px-4 py-2 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
+              className="px-3 py-2 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
             >
               <Linkedin className="h-5 w-5" /> LinkedIn
             </a>
             <a
               href="#contact"
-              className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-2"
+              className="px-3 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-2"
             >
               <Briefcase className="h-5 w-5" /> Hire Me
             </a>
@@ -457,22 +457,24 @@ export default function PortfolioSite() {
               className="w-full border rounded-md px-4 py-3 text-base bg-slate-50 dark:bg-slate-700"
               required
             ></textarea>
+
+            <div className="flex flex-wrap gap-4 justify-start items-center">
             <button
               type="submit"
-              className="px-5 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-2 text-base"
+              className="px-4 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-2 text-base"
             >
               <Mail className="h-5 w-5" /> Send Message
             </button>
-          </form>
-          <div className="flex gap-3 flex-wrap pt-6">
+          
             <a
               href={RESUME_URL}
               download="KAMRAN_Resume.pdf"
-              className="px-4 py-2 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
+              className="px-3 py-2 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
             >
               <Download className="h-5 w-5" /> Download Resume
             </a>
-          </div>
+            </div>
+          </form>
         </div>
       </section>
 
@@ -482,7 +484,7 @@ export default function PortfolioSite() {
       </div>
       {/* Footer */}
       <footer className="py-6 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Mohd Kamran Khan. All rights reserved.
+        © {new Date().getFullYear()} Mohd Kamran Khan.
       </footer>
 
       <AnimatePresence>
