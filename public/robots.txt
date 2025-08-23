@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mohdkamran-khan.github.io/KAMRAN-portfolio/sitemap.xml
