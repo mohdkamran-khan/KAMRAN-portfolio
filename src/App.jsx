@@ -34,17 +34,6 @@ const projects = [
       "Developed during internship. Optimized DB queries, implemented REST APIs, and integrated role-based access.",
   },
   {
-    slug: "hotstar-clone",
-    title: "Disney+ Hotstar Clone (React)",
-    description:
-      "Responsive streaming UI with reusable components and routing. Hosted on Netlify.",
-    stack: ["React", "Vite", "Netlify"],
-    link: "https://hotstarclonekamran.netlify.app/",
-    repo: "https://github.com/mohdkamran-khan",
-    details:
-      "Created a streaming app clone with video components, state management, and polished UI/UX.",
-  },
-  {
     slug: "ebook-maven",
     title: "eBook Management Maven App",
     description:
@@ -55,6 +44,46 @@ const projects = [
     details:
       "Implemented using Java backend and JSP for views. Managed catalog and authentication with MySQL.",
   },
+  {
+    slug: "hotstar-clone",
+    title: "Disney+ Hotstar Clone (React)",
+    description: "Responsive UI with reusable components. Hosted on Netlify.",
+    stack: ["React", "Netlify"],
+    link: "https://hotstarclonekamran.netlify.app/",
+    repo: "https://github.com/mohdkamran-khan",
+    details: "Created a streaming app clone with a polished UI/UX.",
+  },
+  {
+    slug: "Rock-Paper-Scissors-JS",
+    title: "Rock Paper Scissors Game (JS)",
+    description:
+      "A simple Rock Paper Scissors game implemented in JavaScript with score tracking.",
+    stack: ["JavaScript", "HTML", "CSS"],
+    link: "#",
+    repo: "#",
+    details:
+      "Implemented using JavaScript for game logic and HTML/CSS for layout. Features score tracking and responsive design.",
+  },
+  {
+    slug: "myntra-clone",
+    title: "Myntra Clone (JS)",
+    description: "Responsive UI with product details and checkout feature.",
+    stack: ["HTML", "CSS", "JavaScript"],
+    link: "#",
+    repo: "#",
+    details: "Created a shopping app clone with a polished UI/UX.",
+  },
+  {
+    slug: "To-Do List-JS",
+    title: "To-Do List App (JS)",
+    description:
+      "A simple To-Do List app implemented in JavaScript with local storage.",
+    stack: ["JavaScript", "HTML", "CSS"],
+    link: "#",
+    repo: "#",
+    details:
+      "Implemented using JavaScript for functionality and HTML/CSS for layout. Features local storage for task persistence.",
+  },
 ];
 
 const skills = [
@@ -64,18 +93,22 @@ const skills = [
   },
   {
     group: "Frameworks & Libraries",
-    items: ["React", "Node", "Express", "Redux", "JSP/Servlet"],
+    items: ["React.js", "Node.js", "Express.js", "Redux", "JSP/Servlet"],
   },
-  { group: "Databases", items: ["MongoDB", "MySQL", "Oracle", "RDBMS"] },
+  { group: "Databases", items: ["MongoDB", "MySQL", "RDBMS"] },
   {
     group: "Tools",
     items: [
       "Git",
       "VS Code",
       "IntelliJ",
+      "Eclipse",
       "Maven",
+      "Multer",
+      "Postman",
       "Stripe",
       "Tailwind",
+      "Bootstrap",
       "Cloudinary",
     ],
   },
@@ -87,9 +120,9 @@ const experiences = [
     company: "MindShift Technologies",
     period: "Jun 2025 – Sep 2025",
     points: [
-      "Built & deployed an LMS using MERN stack.",
-      "Optimized REST APIs and DB queries for faster response times.",
-      "Worked in Agile sprints, using Git/Jira for tracking & collaboration.",
+      "Built & deployed a Learning Management System (LMS) using MERN stack.",
+      "Optimized REST APIs and DB queries using Query Optimization for faster response times.",
+      "Worked in Agile sprints, using Git for tracking & collaboration.",
     ],
   },
 ];
@@ -101,17 +134,17 @@ const education = [
     year: "Sept 2025",
   },
   {
-    title: "MERN Stack Course",
+    title: "MERN Stack Certification Course",
     org: "Knowledge Gate",
     year: "Dec 2025",
   },
   {
-    title: "AI/ML Course",
+    title: "AI/ML Certification Course",
     org: "Knowledge Gate",
     year: "Dec 2025",
   },
   {
-    title: "JavaScript Course",
+    title: "JavaScript Certification Course",
     org: "Knowledge Gate",
     year: "June 2025",
   },
