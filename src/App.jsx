@@ -515,7 +515,7 @@ export default function PortfolioSite() {
       </div>
       {/* Footer */}
       <footer className="py-6 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} Mohd Kamran Khan.
+        © {new Date().getFullYear()} | Mohd Kamran Khan.
       </footer>
 
       <AnimatePresence>
