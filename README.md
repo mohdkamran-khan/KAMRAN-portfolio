@@ -1,12 +1,51 @@
-# React + Vite
+# KAMRAN Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! This repository showcases my projects, skills, and experiences as a FullStack Developer.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+Check out the live website here: [KAMRAN Portfolio](https://mohdkamran-khan.github.io/KAMRAN-portfolio)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 About
+This portfolio website is designed to highlight my work and provide a detailed overview of my programming skills. It includes:  
+- Projects I have worked on  
+- My resume  
+- Contact information and social links  
 
-## Expanding the ESLint configuration
+Built with modern web technologies and responsive design principles.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies Used
+- HTML5, CSS3, JavaScript (ES6+)  
+- React.js / Vite  
+- Framer Motion for animations  
+- Tailwind CSS 
+- GitHub Pages for hosting  
+
+## 📂 Project Structure
+KAMRAN-portfolio/
+├── resume/
+├── assets/
+├── css/
+├── jsx/
+├── index.html
+├── README.md
+└── ...
+
+## 🚀 Features
+- Responsive design for desktop, tablet, and mobile  
+- Interactive UI elements and animations  
+- Resume download functionality  
+- Links to GitHub, LinkedIn, and other social profiles  
+
+## 📫 Contact Me
+- Email: [khanmohdkamran@yahoo.com](mailto:khanmohdkamran@yahoo.com)  
+- LinkedIn: [linkedin.com/in/mohdkamran-khan](https://www.linkedin.com/in/mohdkamran-khan)  
+- GitHub: [github.com/mohdkamran-khan](https://github.com/mohdkamran-khan)  
+
+## ⭐ Contributing
+This is my personal portfolio. Contributions are not required, but feedback is welcome!  
+
+## 📄 License
+This project is open-source and available under the [MIT License].  
+
+---
+Thank you for visiting my portfolio! 
