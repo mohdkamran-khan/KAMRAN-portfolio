@@ -26,7 +26,7 @@ const projects = [
     slug: "lms-mern",
     title: "Learning Management System (MERN)",
     description:
-      "Full-featured LMS with authentication, role-based access, course pages, and progress tracking.",
+      "Full-featured LMS with authentication, role-based access, course pages, course search and progress tracking.",
     stack: ["MongoDB", "Express", "React", "Node", "Redux", "Tailwind"],
     link: "#",
     repo: "#",
@@ -37,7 +37,7 @@ const projects = [
     slug: "ebook-maven",
     title: "eBook Management Maven App",
     description:
-      "JSP/Servlet + MySQL app for catalog & user management deployed on Apache Tomcat.",
+      "JSP/Servlet + MySQL app for catalog & user management, role-based access, upload/buy/sell/search books. Deployed on Apache Tomcat.",
     stack: ["Java", "JSP", "Servlet", "MySQL", "Maven", "Tomcat"],
     link: "#",
     repo: "#",
@@ -89,26 +89,25 @@ const projects = [
 const skills = [
   {
     group: "Languages",
-    items: ["Java", "JavaScript", "SQL", "HTML5", "CSS3"],
+    items: ["Java", "JavaScript", "SQL", "HTML", "CSS", "JSON"],
   },
   {
     group: "Frameworks & Libraries",
-    items: ["React.js", "Node.js", "Express.js", "Redux", "JSP/Servlet"],
+    items: ["React.js", "Redux", "Node.js", "Express.js", "JSP/Servlet", "JSTL", "Tailwind", "Bootstrap", "JWT"],
   },
   { group: "Databases", items: ["MongoDB", "MySQL", "RDBMS"] },
   {
-    group: "Tools",
+    group: "Tools & Utilities",
     items: [
       "Git",
       "VS Code",
-      "IntelliJ",
+      "IntelliJ IDEA",
       "Eclipse",
+      "Postman",
+      "Apache Tomcat",
       "Maven",
       "Multer",
-      "Postman",
       "Stripe",
-      "Tailwind",
-      "Bootstrap",
       "Cloudinary",
     ],
   },
@@ -356,7 +355,7 @@ export default function PortfolioSite() {
                       <ExternalLink className="h-4 w-4" /> Demo
                     </a>
                   )}
-                  {p.repo !== "#" && (
+                  {/* {p.repo !== "#" && (
                     <a
                       href={p.repo}
                       target="_blank"
@@ -365,7 +364,7 @@ export default function PortfolioSite() {
                     >
                       <Github className="h-4 w-4" /> Code
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
             </motion.div>
