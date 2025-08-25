@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/png" href="/KAMRAN-portfolio/K_icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Language" content="en" />
+
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Google Search Console verification -->
+
+    <!-- Google Site Verification -->
     <meta
       name="google-site-verification"
       content="vJztvgAqM96KF8eEoOYuc2pUvHaREEuSRgRrEIuUYx4"
     />
+
     <title>Kamran | FullStack Developer</title>
     <meta
       name="description"
@@ -24,7 +31,7 @@
     />
     <meta name="author" content="Mohd Kamran Khan" />
 
-    <!-- Open Graph (Facebook, LinkedIn) -->
+    <!-- Open Graph (Facebook, LinkedIn, WhatsApp, etc.) -->
     <meta property="og:title" content="Kamran | FullStack Developer" />
     <meta
       property="og:description"
@@ -37,11 +44,13 @@
     />
     <meta
       property="og:image"
-      content="https://mohdkamran-khan.github.io/KAMRAN-portfolio/K_icon.png"
+      content="https://mohdkamran-khan.github.io/KAMRAN-portfolio/banner.png"
     />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Kamran | FullStack Developer" />
     <meta
       name="twitter:description"
@@ -49,7 +58,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://mohdkamran-khan.github.io/KAMRAN-portfolio/K_icon.png"
+      content="https://mohdkamran-khan.github.io/KAMRAN-portfolio/banner.png"
     />
 
     <!-- Canonical URL -->
@@ -57,24 +66,101 @@
       rel="canonical"
       href="https://mohdkamran-khan.github.io/KAMRAN-portfolio/"
     />
+
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Mohd Kamran Khan",
-        "url": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/",
-        "image": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/K_icon.png",
-        "jobTitle": "Full Stack Developer",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Freelance / Open Source"
-        },
-        "sameAs": [
-          "https://github.com/mohdkamran-khan",
-          "https://www.linkedin.com/in/mohdkamran-khan/",
-          "mailto:your-email@example.com"
-        ],
-        "description": "Portfolio of Mohd Kamran Khan - Full Stack Developer skilled in MERN stack and Java. Showcasing projects, resume, and contact information."
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/#website",
+            "url": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/",
+            "name": "Kamran | Full Stack Developer Portfolio",
+            "description": "Explore the portfolio of Mohd Kamran Khan, Full Stack Developer skilled in MERN stack and Java. View projects, resume, and contact details.",
+            "publisher": {
+              "@id": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/#person"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/#webpage",
+            "url": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/",
+            "name": "Portfolio of Mohd Kamran Khan | Full Stack Developer",
+            "isPartOf": {
+              "@id": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/#website"
+            },
+            "about": {
+              "@id": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/#person"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "@id": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/banner.png",
+              "url": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/banner.png",
+              "caption": "Kamran | Full Stack Developer Portfolio"
+            },
+            "datePublished": "2025-08-25",
+            "dateModified": "2025-08-25"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/#person",
+            "name": "Mohd Kamran Khan",
+            "givenName": "Mohd Kamran",
+            "familyName": "Khan",
+            "url": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/",
+            "image": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/banner.png",
+            "jobTitle": "Full Stack Developer",
+            "description": "Portfolio of Mohd Kamran Khan - Full Stack Developer skilled in MERN stack and Java. Showcasing projects, resume, and contact information.",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "Freelance / Open Source"
+            },
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Integral University",
+              "sameAs": "https://iul.ac.in/"
+            },
+            "knowsAbout": [
+              "Full Stack Development",
+              "MERN Stack",
+              "Java",
+              "React.js",
+              "Node.js",
+              "MongoDB",
+              "MySQL",
+              "REST APIs",
+              "Software Development"
+            ],
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "email": "khanmohdkamran@yahoo.com",
+              "contactType": "Personal",
+              "availableLanguage": ["English", "Hindi"]
+            },
+            "sameAs": [
+              "https://github.com/mohdkamran-khan",
+              "https://www.linkedin.com/in/mohdkamran-khan/",
+              "mailto:khanmohdkamran@yahoo.com"
+            ]
+          },
+          {
+            "@type": "MediaObject",
+            "@id": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/#resume",
+            "name": "Mohd Kamran Khan Resume",
+            "description": "Downloadable PDF version of Mohd Kamran Khan's professional resume showcasing skills, experience, and education.",
+            "contentUrl": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/resume/KAMRAN_Resume.pdf",
+            "encodingFormat": "application/pdf",
+            "fileFormat": "application/pdf",
+            "author": {
+              "@id": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/#person"
+            },
+            "url": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/resume/KAMRAN_Resume.pdf",
+            "mainEntityOfPage": {
+              "@id": "https://mohdkamran-khan.github.io/KAMRAN-portfolio/#webpage"
+            }
+          }
+        ]
       }
     </script>
     <script type="module" crossorigin src="/KAMRAN-portfolio/assets/index-DWrIa9mO.js"></script>
