@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Github,
-  Linkedin,
   Mail,
   Phone,
   Download,
@@ -18,6 +16,7 @@ import {
   Wrench,
   ArrowUp,
 } from "lucide-react";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 const RESUME_URL = `${import.meta.env.BASE_URL}resume/KAMRAN_Resume.pdf`;
 
@@ -93,7 +92,17 @@ const skills = [
   },
   {
     group: "Frameworks & Libraries",
-    items: ["React.js", "Redux", "Node.js", "Express.js", "JSP/Servlet", "JSTL", "Tailwind", "Bootstrap", "JWT"],
+    items: [
+      "React.js",
+      "Redux",
+      "Node.js",
+      "Express.js",
+      "JSP/Servlet",
+      "JSTL",
+      "Tailwind",
+      "Bootstrap",
+      "JWT",
+    ],
   },
   { group: "Databases", items: ["MongoDB", "MySQL", "RDBMS"] },
   {
@@ -183,6 +192,25 @@ export default function PortfolioSite() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const [formSuccess, setFormSuccess] = useState(false);
+
+  // Check query params for success
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("success") === "true") {
+      setFormSuccess(true);
+      window.history.replaceState({}, document.title, window.location.pathname);
+    }
+  }, []);
+
+  // Auto-hide after 8s
+  useEffect(() => {
+    if (formSuccess) {
+      const timer = setTimeout(() => setFormSuccess(false), 8000);
+      return () => clearTimeout(timer);
+    }
+  }, [formSuccess]);
 
   return (
     <div
@@ -282,7 +310,7 @@ export default function PortfolioSite() {
               rel="noreferrer"
               className="px-2 py-2 border rounded-xl flex items-center gap-1 hover:bg-slate-50 dark:hover:bg-slate-700"
             >
-              <Github className="h-5 w-5" /> GitHub
+              <SiGithub className="h-5 w-5" /> GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/kamran-khan-316a5937b"
@@ -290,7 +318,7 @@ export default function PortfolioSite() {
               rel="noreferrer"
               className="px-2 py-2 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
             >
-              <Linkedin className="h-5 w-5" /> LinkedIn
+              <SiLinkedin className="h-5 w-5" /> LinkedIn
             </a>
             <a
               href="#contact"
@@ -453,21 +481,28 @@ export default function PortfolioSite() {
 
       {/* Contact */}
       <section id="contact" className="max-w-7xl mx-auto px-6 md:px-12 py-14">
-        <div className="rounded-2xl border p-8 md:p-10 bg-white dark:bg-slate-800 shadow-sm">
-          <h2 className="text-2xl md:text-3xl font-semibold mb-4 flex items-center gap-2">
+        <div className="rounded-2xl border p-8 bg-white dark:bg-slate-800 shadow-sm">
+          <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
             <Send className="h-6 w-6" /> Let’s connect to build something great!
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
             Open to full-time roles in Full-Stack / Frontend Development. Let's
             discuss how I can contribute to your team!
           </p>
+
+          {/* Contact Form */}
           <form
-            name="contact"
+            action="https://formsubmit.co/khanmohdkamran@yahoo.com"
             method="POST"
-            data-netlify="true"
             className="space-y-4"
           >
-            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://mohdkamran-khan.github.io/KAMRAN-portfolio/?success=true"
+            />
+
             <input
               type="text"
               name="name"
@@ -489,10 +524,11 @@ export default function PortfolioSite() {
               className="w-full border rounded-md px-4 py-3 text-base bg-slate-50 dark:bg-slate-700"
               required
             ></textarea>
-            <div className="flex flex-wrap gap-4 justify-start items-center">
+
+            <div className="flex gap-4 items-center">
               <button
                 type="submit"
-                className="px-4 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-2 text-base"
+                className="px-4 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-2"
               >
                 <Mail className="h-5 w-5" /> Send Message
               </button>
@@ -507,6 +543,31 @@ export default function PortfolioSite() {
           </form>
         </div>
       </section>
+
+      {/* Toast Notification Container */}
+      <AnimatePresence>
+        {formSuccess && (
+          <motion.div
+            initial={{ opacity: 0, x: 50, y: 0 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 50 }}
+            transition={{ duration: 0.4 }}
+            className="fixed top-6 right-6 z-50"
+          >
+            <div className="p-4 rounded-xl bg-green-100 text-green-900 border border-green-300 shadow-lg flex items-center justify-between gap-4 min-w-[280px]">
+              <span className="text-sm font-medium">
+                Message sent successfully! I’ll get back to you soon.
+              </span>
+              <button
+                onClick={() => setFormSuccess(false)}
+                className="text-green-900 font-bold hover:text-red-600"
+              >
+                ✖
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div className="max-w-7xl mx-auto px-6">
         {/* Separator */}
