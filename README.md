@@ -18,7 +18,8 @@ Built with modern web technologies and responsive design principles.
 - React.js / Vite  
 - Framer Motion for animations  
 - Tailwind CSS 
-- GitHub Pages for hosting  
+- GitHub Pages for hosting
+- FormSubmit for handling mails
 
 ## 📂 Project Structure
 KAMRAN-portfolio/
@@ -34,7 +35,8 @@ KAMRAN-portfolio/
 - Responsive design for desktop, tablet, and mobile  
 - Interactive UI elements and animations  
 - Resume download functionality  
-- Links to GitHub, LinkedIn, and other social profiles  
+- Links to GitHub, LinkedIn, and other social profiles
+- Send e-mail to my inbox
 
 ## 📫 Contact Me
 - Email: [khanmohdkamran@yahoo.com](mailto:khanmohdkamran@yahoo.com)  
