@@ -35,7 +35,7 @@ const projects = [
   },
   {
     slug: "ebook-maven",
-    title: "eBook Management Maven App",
+    title: "eBook Management App (Maven)",
     description:
       "JSP/Servlet + MySQL app for catalog & user management, role-based access, upload/buy/sell/search books. Deployed on Apache Tomcat.",
     stack: ["Java", "JSP", "Servlet", "MySQL", "Maven", "Tomcat"],
