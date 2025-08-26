@@ -169,12 +169,18 @@ const education = [
 ];
 
 export default function PortfolioSite() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+  localStorage.getItem("theme") === "dark" ||
+  (!localStorage.getItem("theme") && window.matchMedia("(prefers-color-scheme: dark)").matches)
+);
 
+  // Update localStorage + <html> class whenever darkMode changes
   useEffect(() => {
     if (darkMode) {
+      localStorage.setItem("theme", "dark");
       document.documentElement.classList.add("dark");
     } else {
+      localStorage.setItem("theme", "light");
       document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
@@ -204,10 +210,10 @@ export default function PortfolioSite() {
     }
   }, []);
 
-  // Auto-hide after 8s
+  // Auto-hide after 5s
   useEffect(() => {
     if (formSuccess) {
-      const timer = setTimeout(() => setFormSuccess(false), 8000);
+      const timer = setTimeout(() => setFormSuccess(false), 5000);
       return () => clearTimeout(timer);
     }
   }, [formSuccess]);
@@ -556,7 +562,7 @@ export default function PortfolioSite() {
           >
             <div className="p-4 rounded-xl bg-green-100 text-green-900 border border-green-300 shadow-lg flex items-center justify-between gap-4 min-w-[280px]">
               <span className="text-sm font-medium">
-                Message sent successfully! I’ll get back to you soon.
+                Message received! I’ll get back to you soon.
               </span>
               <button
                 onClick={() => setFormSuccess(false)}
