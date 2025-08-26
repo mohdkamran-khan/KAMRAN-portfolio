@@ -33,7 +33,8 @@ KAMRAN-portfolio/
 
 ## 🚀 Features
 - Responsive design for desktop, tablet, and mobile  
-- Interactive UI elements and animations  
+- Interactive UI elements and animations
+- Page refresh survives preferred theme  
 - Resume download functionality  
 - Links to GitHub, LinkedIn, and other social profiles
 - Send e-mail to my inbox
