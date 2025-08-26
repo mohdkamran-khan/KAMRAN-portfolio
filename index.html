@@ -8,6 +8,19 @@
     <meta name="robots" content="index, follow" />
     <meta http-equiv="Content-Language" content="en" />
 
+    <!-- Theme detection (prevents flash of wrong theme) -->
+    <script>
+       (() => {
+    const theme = localStorage.getItem("theme");
+    const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    if (theme === "dark" || (!theme && systemDark)) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  })();
+    </script>
+
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
@@ -163,7 +176,7 @@
         ]
       }
     </script>
-    <script type="module" crossorigin src="/KAMRAN-portfolio/assets/index-Bc0zFbg8.js"></script>
+    <script type="module" crossorigin src="/KAMRAN-portfolio/assets/index-C09IG4pY.js"></script>
     <link rel="stylesheet" crossorigin href="/KAMRAN-portfolio/assets/index-TzqoUaNh.css">
   </head>
   <body>
