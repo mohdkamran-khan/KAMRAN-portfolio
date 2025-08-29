@@ -320,7 +320,7 @@ export default function PortfolioSite() {
               <SiGithub className="h-5 w-5" /> GitHub
             </a>
             <a
-              href="https://www.linkedin.com/in/kamran-khan-316a5937b"
+              href="https://www.linkedin.com/in/mohdkamran-khan"
               target="_blank"
               rel="noreferrer"
               className="px-2 py-2 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
