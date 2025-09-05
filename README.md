@@ -4,6 +4,7 @@ Welcome to my personal portfolio! This repository showcases my projects, skills,
 
 ## 🌐 Live Demo
 Check out the live website here: [KAMRAN Portfolio](https://mohdkamran-khan.github.io/KAMRAN-portfolio)
+<img width="4450" height="6394" alt="mohdkamran-khan github io_KAMRAN-portfolio_ (1)" src="https://github.com/user-attachments/assets/1251c114-32ac-498b-b3cd-39fb529d0d0b" />
 
 ## 💻 About
 This portfolio website is designed to highlight my work and provide a detailed overview of my programming skills. It includes:  
