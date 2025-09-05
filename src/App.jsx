@@ -234,6 +234,12 @@ export default function PortfolioSite() {
             </span>
           </div>
           <div className="flex items-center gap-5 text-base">
+             <a
+              href="#about"
+              className="hover:underline hidden sm:flex items-center gap-1"
+            >
+              <Code2 className="h-4 w-4" /> About Me
+            </a>
             <a
               href="#projects"
               className="hover:underline hidden sm:flex items-center gap-1"
@@ -339,6 +345,16 @@ export default function PortfolioSite() {
 
       {/* Separator */}
       <div className="border-t border-slate-300 dark:border-slate-700 max-w-7xl mx-auto px-6 mt-12"></div>
+
+      {/* About */}
+      <section id="about" className="max-w-7xl mx-auto -mb-10 px-6 md:px-12 py-10">
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 underline">
+          <Code2 className="h-6 w-6" /> About Me
+        </h2>
+        <p className="text-xl text-slate-600 dark:text-slate-300">
+          I have expertise in end-to-end <b>Web Application Development</b> with the <b>MERN</b> stack, with a strong focus on building scalable and responsive solutions. I am proficient in developing and securing <b>REST APIs</b> with <b>JWT</b> authentication to ensure robust access control, and have hands-on experience in integrating <b>Stripe</b>, <b>Razorpay</b>, and <b>Cloudinary</b> for real-world features such as payments and media management. I am skilled in deploying applications using <b>AWS</b>, <b>Docker</b>, and modern <b>CI/CD</b> pipelines, ensuring reliability and efficiency. Alongside this, I bring a strong foundation in <b>Java</b>, <b>SQL</b>, and <b>Maven</b>, enabling me to confidently deliver enterprise-level projects.
+        </p>
+      </section>
 
       {/* Projects */}
       <section id="projects" className="max-w-7xl mx-auto px-6 md:px-12 py-12">
@@ -474,7 +490,7 @@ export default function PortfolioSite() {
           {education.map((ed, idx) => (
             <div
               key={idx}
-              className="rounded-2xl border p-6 bg-white dark:bg-slate-800 shadow-sm"
+              className="rounded-2xl border p-6 bg-white dark:bg-slate-800 shadow-sm flex flex-col items-center text-center"
             >
               <h3 className="font-medium text-lg">{ed.title}</h3>
               <p className="text-base text-slate-600 dark:text-slate-300">
