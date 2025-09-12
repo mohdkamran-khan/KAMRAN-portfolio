@@ -54,16 +54,7 @@ const projects = [
     details:
       "Implemented using MERN for functionality and React/Tailwind for layout. Features responsive design and local storage for event persistence.",
   },
-  {
-    slug: "hotstar-clone",
-    title: "Disney+ Hotstar Clone (React)",
-    description: "Responsive UI with reusable components. Hosted on Netlify.",
-    stack: ["React", "Netlify"],
-    link: "https://hotstarclonekamran.netlify.app/",
-    repo: "https://github.com/mohdkamran-khan/HotStar-Clones",
-    details: "Created a streaming app clone with a polished UI/UX.",
-  },
-  {
+   {
     slug: "Rock-Paper-Scissors-JS",
     title: "Rock Paper Scissors Game (JS)",
     description:
@@ -73,6 +64,15 @@ const projects = [
     repo: "https://github.com/mohdkamran-khan/RockPaperScissorsGame",
     details:
       "Implemented using JavaScript for game logic and HTML/CSS for layout. Features score tracking and responsive design.",
+  },
+  {
+    slug: "hotstar-clone",
+    title: "Disney+ Hotstar Clone (React)",
+    description: "Responsive UI with reusable components. Hosted on Netlify.",
+    stack: ["React", "Netlify"],
+    link: "https://hotstarclonekamran.netlify.app/",
+    repo: "https://github.com/mohdkamran-khan/HotStar-Clones",
+    details: "Created a streaming app clone with a polished UI/UX.",
   },
   {
     slug: "myntra-clone",
@@ -356,7 +356,7 @@ export default function PortfolioSite() {
               href="https://github.com/mohdkamran-khan"
               target="_blank"
               rel="noreferrer"
-              className="px-2 py-2 border rounded-xl flex items-center gap-1 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
+              className="px-2 py-2 border border-gray-600 rounded-xl flex items-center gap-1 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
             >
               <SiGithub className="h-5 w-5" /> GitHub
             </a>
@@ -364,7 +364,7 @@ export default function PortfolioSite() {
               href="https://www.linkedin.com/in/mohdkamran-khan"
               target="_blank"
               rel="noreferrer"
-              className="px-2 py-2 border rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
+              className="px-2 py-2 border border-gray-600 rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
             >
               <SiLinkedin className="h-5 w-5" /> LinkedIn
             </a>
@@ -444,25 +444,25 @@ export default function PortfolioSite() {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-3 text-sm">
-                  {p.link !== "#" && (
-                    <a
-                      href={p.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="px-3 py-1.5 border rounded-xl flex items-center gap-2 hover:scale-110 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
-                    >
-                      <ExternalLink className="h-4 w-4" /> Demo
-                    </a>
-                  )}
+                <div className="flex gap-3 mt-5 text-sm items-center justify-center">
                    {p.repo !== "#" && (
                     <a
                       href={p.repo}
                       target="_blank"
                       rel="noreferrer"
-                      className="px-3 py-1.5 border rounded-xl flex items-center gap-2 hover:scale-110 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
+                      className="px-3 py-1.5 border border-gray-600 rounded-xl flex items-center gap-2 hover:scale-110 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
                     >
                       <SiGithub className="h-4 w-4" /> Code
+                    </a>
+                  )}
+                   {p.link !== "#" && (
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-3 py-1.5 border border-gray-600 rounded-xl flex items-center gap-2 hover:scale-110 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
+                    >
+                      <ExternalLink className="h-4 w-4" /> Demo
                     </a>
                   )}
                 </div>
@@ -607,7 +607,7 @@ export default function PortfolioSite() {
               <a
                 href={RESUME_URL}
                 download="KAMRAN_Resume.pdf"
-                className="px-3 py-2 border rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
+                className="px-4 py-3 border border-gray-600 rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
               >
                 <Download className="h-5 w-5" /> Download Resume
               </a>
