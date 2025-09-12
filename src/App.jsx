@@ -317,7 +317,7 @@ export default function PortfolioSite() {
             </button>
             <a
               href={RESUME_URL}
-              download="KAMRAN_Resume.pdf"
+              download="Kamran_Resume.pdf"
               className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 hover:shadow-2xl hover:bg-blue-700 flex items-center gap-2"
             >
               <Download className="h-5 w-5" /> Resume
@@ -606,7 +606,7 @@ export default function PortfolioSite() {
               </button>
               <a
                 href={RESUME_URL}
-                download="KAMRAN_Resume.pdf"
+                download="Kamran_Resume.pdf"
                 className="px-4 py-3 border border-gray-600 rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
               >
                 <Download className="h-5 w-5" /> Download Resume
