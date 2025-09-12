@@ -26,9 +26,9 @@ const projects = [
     title: "Learning Management System (MERN)",
     description:
       "Full-featured LMS with authentication, role-based access, course pages, course search and progress tracking.",
-    stack: ["MongoDB", "Express", "React", "Node", "Redux", "Tailwind"],
+    stack: ["MongoDB", "Express", "React", "Node", "Redux", "JWT", "Multer", "Tailwind"],
     link: "#",
-    repo: "#",
+    repo: "https://github.com/mohdkamran-khan/MT",
     details:
       "Developed during internship. Optimized DB queries, implemented REST APIs, and integrated role-based access.",
   },
@@ -39,9 +39,20 @@ const projects = [
       "JSP/Servlet + MySQL app for catalog & user management, role-based access, upload/buy/sell/search books. Deployed on Apache Tomcat.",
     stack: ["Java", "JSP", "Servlet", "MySQL", "Maven", "Tomcat"],
     link: "#",
-    repo: "#",
+    repo: "https://github.com/mohdkamran-khan/Ebook",
     details:
       "Implemented using Java backend and JSP for views. Managed catalog and authentication with MySQL.",
+  },
+  {
+    slug: "Event-Tracker-MERN",
+    title: "Event Tracker (MERN)",
+    description:
+      "Clean & Responsive event tracker built with MERN Stack. CRUD functionality and search features.",
+    stack: ["MongoDB", "Express", "React", "Node", "Axios", "Morgan", "Tailwind"],
+    link: "#",
+    repo: "https://github.com/mohdkamran-khan/Mini-Event-Tracker",
+    details:
+      "Implemented using MERN for functionality and React/Tailwind for layout. Features responsive design and local storage for event persistence.",
   },
   {
     slug: "hotstar-clone",
@@ -49,7 +60,7 @@ const projects = [
     description: "Responsive UI with reusable components. Hosted on Netlify.",
     stack: ["React", "Netlify"],
     link: "https://hotstarclonekamran.netlify.app/",
-    repo: "https://github.com/mohdkamran-khan",
+    repo: "https://github.com/mohdkamran-khan/HotStar-Clones",
     details: "Created a streaming app clone with a polished UI/UX.",
   },
   {
@@ -59,7 +70,7 @@ const projects = [
       "A simple Rock Paper Scissors game implemented in JavaScript with score tracking.",
     stack: ["JavaScript", "HTML", "CSS"],
     link: "#",
-    repo: "#",
+    repo: "https://github.com/mohdkamran-khan/RockPaperScissorsGame",
     details:
       "Implemented using JavaScript for game logic and HTML/CSS for layout. Features score tracking and responsive design.",
   },
@@ -67,21 +78,43 @@ const projects = [
     slug: "myntra-clone",
     title: "Myntra Clone (JS)",
     description: "Responsive UI with product details and checkout feature.",
-    stack: ["HTML", "CSS", "JavaScript"],
+    stack: ["JavaScript", "HTML", "CSS"],
     link: "#",
-    repo: "#",
+    repo: "https://github.com/mohdkamran-khan/Myntra_Clone",
     details: "Created a shopping app clone with a polished UI/UX.",
+  },
+   {
+    slug: "QR-Code-Generator-JS",
+    title: "QR Code Generator (JS)",
+    description:
+      "A simple and responsive web application that allows you to generate QR codes for any URL or text, and optionally embed a custom logo inside the QR code.",
+    stack: ["JavaScript", "HTML", "CSS"],
+    link: "#",
+    repo: "https://github.com/mohdkamran-khan/QR-Code-Generator",
+    details:
+      "Implemented using JavaScript for functionality and HTML/CSS for layout.",
   },
   {
     slug: "To-Do List-JS",
     title: "To-Do List App (JS)",
     description:
-      "A simple To-Do List app implemented in JavaScript with local storage.",
+      "A simple To-Do List app implemented in JavaScript with local storage for task persistence.",
     stack: ["JavaScript", "HTML", "CSS"],
     link: "#",
-    repo: "#",
+    repo: "https://github.com/mohdkamran-khan/Todo-List",
     details:
       "Implemented using JavaScript for functionality and HTML/CSS for layout. Features local storage for task persistence.",
+  },
+  {
+    slug: "Calculator-JS",
+    title: "Calculator (JS)",
+    description:
+      "A simple, elegant Calculator perfect for basic arithmetic with a clean UI.",
+    stack: ["JavaScript", "HTML", "CSS"],
+    link: "#",
+    repo: "https://github.com/mohdkamran-khan/Calculator",
+    details:
+      "Implemented using JavaScript for functionality and HTML/CSS for layout.",
   },
 ];
 
@@ -99,12 +132,13 @@ const skills = [
       "Express.js",
       "JSP/Servlet",
       "JSTL",
+      "JWT",
+      "Axios",
       "Tailwind",
       "Bootstrap",
-      "JWT",
     ],
   },
-  { group: "Databases", items: ["MongoDB", "MySQL", "RDBMS"] },
+  { group: "Databases", items: ["MongoDB", "AWS", "MySQL", "RDBMS"] },
   {
     group: "Tools & Utilities",
     items: [
@@ -113,6 +147,7 @@ const skills = [
       "IntelliJ IDEA",
       "Eclipse",
       "Postman",
+      "Morgan",
       "Apache Tomcat",
       "Maven",
       "Multer",
@@ -222,14 +257,14 @@ export default function PortfolioSite() {
   return (
     <div
       id="top"
-      className="min-h-screen bg-gradient-to-b from-slate-50 to-white text-slate-900 dark:from-slate-900 dark:to-slate-950 dark:text-slate-100 font-inter"
+      className="min-h-screen bg-gradient-to-b from-slate-200 to-white text-slate-900 dark:from-slate-900 dark:to-slate-950 dark:text-slate-100 font-inter"
     >
       {/* Navbar */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
         <nav className="max-w-7xl mx-auto px-3 py-5 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Code2 className="h-6 w-6" />
-            <span className="font-semibold tracking-tight text-lg">
+            <span className="font-semibold tracking-tight text-lg cursor-context-menu">
               Kamran.dev
             </span>
           </div>
@@ -272,7 +307,7 @@ export default function PortfolioSite() {
             </a>
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-full border border-slate-300 dark:border-slate-700"
+              className="p-2 rounded-full border hover:scale-105 hover:shadow-2xl border-slate-300 dark:border-slate-700"
             >
               {darkMode ? (
                 <Sun className="h-5 w-5" />
@@ -283,7 +318,7 @@ export default function PortfolioSite() {
             <a
               href={RESUME_URL}
               download="KAMRAN_Resume.pdf"
-              className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-2"
+              className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 hover:shadow-2xl hover:bg-blue-700 flex items-center gap-2"
             >
               <Download className="h-5 w-5" /> Resume
             </a>
@@ -321,7 +356,7 @@ export default function PortfolioSite() {
               href="https://github.com/mohdkamran-khan"
               target="_blank"
               rel="noreferrer"
-              className="px-2 py-2 border rounded-xl flex items-center gap-1 hover:bg-slate-50 dark:hover:bg-slate-700"
+              className="px-2 py-2 border rounded-xl flex items-center gap-1 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
             >
               <SiGithub className="h-5 w-5" /> GitHub
             </a>
@@ -329,13 +364,13 @@ export default function PortfolioSite() {
               href="https://www.linkedin.com/in/mohdkamran-khan"
               target="_blank"
               rel="noreferrer"
-              className="px-2 py-2 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
+              className="px-2 py-2 border rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
             >
               <SiLinkedin className="h-5 w-5" /> LinkedIn
             </a>
             <a
               href="#contact"
-              className="px-2 py-2 rounded-xl bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-2"
+              className="px-2 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 hover:shadow-2xl hover:bg-blue-700 flex items-center gap-2"
             >
               <Briefcase className="h-5 w-5" /> Hire Me
             </a>
@@ -351,7 +386,7 @@ export default function PortfolioSite() {
         id="about"
         className="max-w-7xl mx-auto -mb-10 px-6 md:px-12 py-10"
       >
-        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 underline">
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 cursor-context-menu underline">
           <Code2 className="h-6 w-6" /> About Me
         </h2>
         <p className="text-xl text-slate-600 dark:text-slate-300">
@@ -373,14 +408,14 @@ export default function PortfolioSite() {
       {/* Projects */}
       <section id="projects" className="max-w-7xl mx-auto px-6 md:px-12 py-12">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-semibold flex items-center gap-2 underline">
+          <h2 className="text-2xl font-semibold flex items-center cursor-context-menu gap-2 underline">
             <FolderKanban className="h-6 w-6" /> Projects
           </h2>
           <a
             href="https://github.com/mohdkamran-khan"
             target="_blank"
             rel="noreferrer"
-            className="text-base hover:underline flex items-center gap-1"
+            className="text-base hover:underline hover:scale-105 hover:shadow-2xl flex items-center gap-1"
           >
             View all <ExternalLink className="h-5 w-5" />
           </a>
@@ -394,7 +429,7 @@ export default function PortfolioSite() {
               viewport={{ once: true }}
               transition={{ duration: 0.35, delay: idx * 0.05 }}
             >
-              <div className="rounded-2xl border p-6 bg-white dark:bg-slate-800 shadow-sm hover:shadow-md transition">
+              <div className="rounded-2xl border p-6 bg-white hover:scale-105 hover:shadow-2xl dark:bg-slate-800 shadow-sm transition">
                 <h3 className="font-semibold text-lg mb-3">{p.title}</h3>
                 <p className="text-base text-slate-600 dark:text-slate-300 mb-4">
                   {p.description}
@@ -415,21 +450,21 @@ export default function PortfolioSite() {
                       href={p.link}
                       target="_blank"
                       rel="noreferrer"
-                      className="px-3 py-1.5 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
+                      className="px-3 py-1.5 border rounded-xl flex items-center gap-2 hover:scale-110 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
                     >
                       <ExternalLink className="h-4 w-4" /> Demo
                     </a>
                   )}
-                  {/* {p.repo !== "#" && (
+                   {p.repo !== "#" && (
                     <a
                       href={p.repo}
                       target="_blank"
                       rel="noreferrer"
-                      className="px-3 py-1.5 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
+                      className="px-3 py-1.5 border rounded-xl flex items-center gap-2 hover:scale-110 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
                     >
-                      <Github className="h-4 w-4" /> Code
+                      <SiGithub className="h-4 w-4" /> Code
                     </a>
-                  )} */}
+                  )}
                 </div>
               </div>
             </motion.div>
@@ -439,7 +474,7 @@ export default function PortfolioSite() {
 
       {/* Skills */}
       <section id="skills" className="max-w-7xl mx-auto px-6 md:px-12">
-        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 underline">
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 cursor-context-menu underline">
           <Wrench className="h-6 w-6" /> Skills
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
@@ -469,7 +504,7 @@ export default function PortfolioSite() {
         id="experience"
         className="max-w-7xl mx-auto px-6 md:px-12 py-12"
       >
-        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 underline">
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 cursor-context-menu underline">
           <Briefcase className="h-6 w-6" /> Experience
         </h2>
         <div className="grid gap-6">
@@ -497,7 +532,7 @@ export default function PortfolioSite() {
 
       {/* Education */}
       <section id="education" className="max-w-7xl mx-auto px-6 md:px-12">
-        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 underline">
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 cursor-context-menu underline">
           <GraduationCap className="h-6 w-6" /> Education
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
@@ -519,7 +554,7 @@ export default function PortfolioSite() {
       {/* Contact */}
       <section id="contact" className="max-w-7xl mx-auto px-6 md:px-12 py-14">
         <div className="rounded-2xl border p-8 bg-white dark:bg-slate-800 shadow-sm">
-          <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
+          <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2 cursor-context-menu">
             <Send className="h-6 w-6" /> Let’s connect to build something great!
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
@@ -565,14 +600,14 @@ export default function PortfolioSite() {
             <div className="flex gap-4 items-center">
               <button
                 type="submit"
-                className="px-4 py-3 rounded-xl bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-2"
+                className="px-4 py-3 rounded-xl bg-blue-600 text-white hover:scale-105 hover:shadow-2xl hover:bg-blue-700 flex items-center gap-2"
               >
                 <Mail className="h-5 w-5" /> Send Message
               </button>
               <a
                 href={RESUME_URL}
                 download="KAMRAN_Resume.pdf"
-                className="px-3 py-2 border rounded-xl flex items-center gap-2 hover:bg-slate-50 dark:hover:bg-slate-700"
+                className="px-3 py-2 border rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
               >
                 <Download className="h-5 w-5" /> Download Resume
               </a>
@@ -611,7 +646,7 @@ export default function PortfolioSite() {
         <div className="border-t border-slate-300 dark:border-slate-700"></div>
       </div>
       {/* Footer */}
-      <footer className="py-6 text-center text-sm text-slate-500">
+      <footer className="py-6 text-center text-sm text-slate-500 cursor-context-menu">
         © {new Date().getFullYear()} | Mohd Kamran Khan.
       </footer>
 
