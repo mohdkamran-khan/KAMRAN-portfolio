@@ -1,9 +1,0 @@
-User-agent: *
-Allow: /
-
-# Sitemaps
-Sitemap: https://mohdkamran-khan.github.io/KAMRAN-portfolio/sitemap.xml
-
-# Ensure images (like banner.png) are crawlable
-Allow: /banner.png
-Allow: /K_icon.png
