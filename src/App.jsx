@@ -18,7 +18,7 @@ import {
 } from "lucide-react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
-const RESUME_URL = `${import.meta.env.BASE_URL}resume/KAMRAN_Resume.pdf`;
+const RESUME_URL = `${import.meta.env.BASE_URL}resume/Kamran_Resume.pdf`;
 
 const projects = [
   {
