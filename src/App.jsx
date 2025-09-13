@@ -37,7 +37,7 @@ const projects = [
     title: "eBook Management App (Maven)",
     description:
       "JSP/Servlet + MySQL app for catalog & user management, role-based access, upload/buy/sell/search books. Deployed on Apache Tomcat.",
-    stack: ["Java", "JSP", "Servlet", "MySQL", "Maven", "Tomcat"],
+    stack: ["JSP", "Servlet", "MySQL", "Maven", "Tomcat"],
     link: "#",
     repo: "https://github.com/mohdkamran-khan/Ebook",
     details:
