@@ -41,7 +41,7 @@ KAMRAN-portfolio/
 - Send e-mail to my inbox
 
 ## 📫 Contact Me
-- Email: [khanmohdkamran@yahoo.com](mailto:mohdkamrankhan.dev@gmail.com)  
+- Email: [mohdkamrankhan.dev@gmail.com](mailto:mohdkamrankhan.dev@gmail.com)  
 - LinkedIn: [linkedin.com/in/mohdkamran-khan](https://www.linkedin.com/in/mohdkamran-khan)  
 - GitHub: [github.com/mohdkamran-khan](https://github.com/mohdkamran-khan)  
 
