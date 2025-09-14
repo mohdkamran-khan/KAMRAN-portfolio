@@ -345,7 +345,7 @@ export default function PortfolioSite() {
               <MapPin className="h-5 w-5" /> Lucknow, UP &nbsp;|
             </span>
             <span className="inline-flex items-center gap-1">
-              <Mail className="h-5 w-5" /> khanmohdkamran@yahoo.com &nbsp;|
+              <Mail className="h-5 w-5" /> mohdkamrankhan.dev@gmail.com &nbsp;|
             </span>
             <span className="inline-flex items-center gap-1">
               <Phone className="h-5 w-5" /> +91 94151 95895
@@ -564,7 +564,7 @@ export default function PortfolioSite() {
 
           {/* Contact Form */}
           <form
-            action="https://formsubmit.co/khanmohdkamran@yahoo.com"
+            action="https://formsubmit.co/mohdkamrankhan.dev@gmail.com"
             method="POST"
             className="space-y-4"
           >
