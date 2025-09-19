@@ -4,7 +4,12 @@ Welcome to my personal portfolio! This repository showcases my projects, skills,
 
 ## 🌐 Live Demo
 Check out the live website here: [KAMRAN Portfolio](https://mohdkamran-khan.github.io/KAMRAN-portfolio)
-<img width="4450" height="6394" alt="mohdkamran-khan github io_KAMRAN-portfolio_" src="https://github.com/user-attachments/assets/bca51b73-8f05-4f37-a3a5-f462883f0b8f" />
+
+--- 
+
+<img width="2048" height="7752" alt="mohdkamran-khan github io_KAMRAN-portfolio_ (1)" src="https://github.com/user-attachments/assets/2ceb3f1a-2101-4f99-9520-92a2783b2c18" />
+
+---
 
 ## 💻 About
 This portfolio website is designed to highlight my work and provide a detailed overview of my programming skills. It includes:  
@@ -41,7 +46,7 @@ KAMRAN-portfolio/
 - Send e-mail to my inbox
 
 ## 📫 Contact Me
-- Email: [khanmohdkamran@yahoo.com](mailto:khanmohdkamran@yahoo.com)  
+- Email: [mohdkamrankhan.dev@gmail.com](mailto:mohdkamrankhan.dev@gmail.com)  
 - LinkedIn: [linkedin.com/in/mohdkamran-khan](https://www.linkedin.com/in/mohdkamran-khan)  
 - GitHub: [github.com/mohdkamran-khan](https://github.com/mohdkamran-khan)  
 
