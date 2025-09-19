@@ -429,7 +429,7 @@ export default function PortfolioSite() {
               viewport={{ once: true }}
               transition={{ duration: 0.35, delay: idx * 0.05 }}
             >
-              <div className="rounded-2xl border p-6 bg-white hover:scale-105 hover:shadow-2xl dark:bg-slate-800 shadow-sm transition">
+              <div className="rounded-2xl border p-6 bg-white hover:shadow-2xl dark:bg-slate-800 shadow-sm transition hover:">
                 <h3 className="font-semibold text-lg mb-3">{p.title}</h3>
                 <p className="text-base text-slate-600 dark:text-slate-300 mb-4">
                   {p.description}
