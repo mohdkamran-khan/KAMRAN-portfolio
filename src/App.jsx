@@ -204,11 +204,11 @@ const education = [
 ];
 
 export default function PortfolioSite() {
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("theme") === "dark" ||
-      (!localStorage.getItem("theme") &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-  );
+  const [darkMode, setDarkMode] = useState(() => {
+  const storedTheme = localStorage.getItem("theme");
+  // Default to light if nothing is stored
+  return storedTheme ? storedTheme === "dark" : false;
+});
 
   // Update localStorage + <html> class whenever darkMode changes
   useEffect(() => {
