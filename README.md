@@ -57,4 +57,9 @@ This is my personal portfolio. Contributions are not required, but feedback is w
 This project is open-source and available under the [MIT License].  
 
 ---
+
+💡 If you like my work, please ⭐ my repos. Your support inspires me to build more projects! 🚀
+
+---
+
 Thank you for visiting my portfolio! 
