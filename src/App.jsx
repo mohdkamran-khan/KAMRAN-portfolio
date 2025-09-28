@@ -264,9 +264,9 @@ export default function PortfolioSite() {
         <nav className="max-w-7xl mx-auto px-3 py-5 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Code2 className="h-6 w-6" />
-            <span className="font-semibold tracking-tight text-lg cursor-context-menu">
+            <a className="font-semibold tracking-tight text-lg cursor-pointer" href="#top">
               Kamran.dev
-            </span>
+            </a>
           </div>
           <div className="flex items-center gap-5 text-base">
             <a
@@ -647,7 +647,7 @@ export default function PortfolioSite() {
       </div>
       {/* Footer */}
       <footer className="py-6 text-center text-sm text-slate-500 cursor-context-menu">
-        © {new Date().getFullYear()} | Mohd Kamran Khan.
+        © {new Date().getFullYear()} | Mohd Kamran Khan
       </footer>
 
       <AnimatePresence>
