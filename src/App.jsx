@@ -262,9 +262,9 @@ export default function PortfolioSite() {
       {/* Navbar */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
         <nav className="max-w-7xl mx-auto px-3 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 cursor-pointer">
             <Code2 className="h-6 w-6" />
-            <a className="font-semibold tracking-tight text-lg cursor-pointer" href="#top">
+            <a className="font-semibold tracking-tight text-lg" href="#top">
               Kamran.dev
             </a>
           </div>
@@ -318,7 +318,7 @@ export default function PortfolioSite() {
             <a
               href={RESUME_URL}
               download="Kamran_Resume.pdf"
-              className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 hover:shadow-2xl hover:bg-blue-700 flex items-center gap-2"
+              className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 shadow-lg shadow-blue-500/50 hover:bg-blue-700 flex items-center gap-2"
             >
               <Download className="h-5 w-5" /> Resume
             </a>
