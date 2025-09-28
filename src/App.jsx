@@ -318,7 +318,7 @@ export default function PortfolioSite() {
             <a
               href={RESUME_URL}
               download="Kamran_Resume.pdf"
-              className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 shadow-lg shadow-blue-500/50 hover:bg-blue-700 flex items-center gap-2"
+              className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 drop-shadow-lg shadow-lg shadow-blue-500/50 hover:bg-blue-700 flex items-center gap-2"
             >
               <Download className="h-5 w-5" /> Resume
             </a>
