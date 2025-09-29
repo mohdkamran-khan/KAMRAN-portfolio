@@ -23,18 +23,46 @@ const RESUME_URL = `${import.meta.env.BASE_URL}resume/Kamran_Resume.pdf`;
 const handleResumeClick = (e) => {
   e.preventDefault();
 
-  // Detect if device is mobile
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  // Always open in new tab for preview
+  // Open preview in a new tab for all devices
   window.open(RESUME_URL, "_blank", "noopener,noreferrer");
 
   if (!isMobile) {
-    // On desktop → trigger "Save As" download
+    // Desktop → trigger download automatically
     const link = document.createElement("a");
     link.href = RESUME_URL;
     link.download = "Kamran_Resume.pdf";
     link.click();
+  } else {
+    // Mobile → show a temporary on-page "Download Resume" button
+    if (!document.getElementById("mobile-download-link")) {
+      const downloadLink = document.createElement("a");
+      downloadLink.id = "mobile-download-link";
+      downloadLink.href = RESUME_URL;
+      downloadLink.download = "Kamran_Resume.pdf";
+      downloadLink.textContent = "Tap here to download resume";
+      downloadLink.style.position = "fixed";
+      downloadLink.style.bottom = "30px";
+      downloadLink.style.left = "50%";
+      downloadLink.style.transform = "translateX(-50%)";
+      downloadLink.style.padding = "12px 24px";
+      downloadLink.style.backgroundColor = "#2563EB";
+      downloadLink.style.color = "#fff";
+      downloadLink.style.borderRadius = "8px";
+      downloadLink.style.fontSize = "16px";
+      downloadLink.style.textAlign = "center";
+      downloadLink.style.zIndex = "9999";
+      downloadLink.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
+      downloadLink.style.textDecoration = "none";
+
+      document.body.appendChild(downloadLink);
+
+      // Optional: Remove the button after 10 seconds
+      setTimeout(() => {
+        if (downloadLink.parentNode) downloadLink.parentNode.removeChild(downloadLink);
+      }, 10000);
+    }
   }
 };
 
