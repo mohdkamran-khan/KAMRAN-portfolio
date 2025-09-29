@@ -25,44 +25,26 @@ const handleResumeClick = (e) => {
 
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  // Open preview in a new tab for all devices
-  window.open(RESUME_URL, "_blank", "noopener,noreferrer");
+  if (isMobile) {
+    // Mobile: Try to trigger download first
+    const link = document.createElement("a");
+    link.href = RESUME_URL;
+    link.download = "Kamran_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 
-  if (!isMobile) {
-    // Desktop → trigger download automatically
+    // Then open the PDF in a new tab (some mobile browsers may not respect download)
+    window.open(RESUME_URL, "_blank", "noopener,noreferrer");
+
+  } else {
+    // Desktop: open and trigger download
+    window.open(RESUME_URL, "_blank", "noopener,noreferrer");
+
     const link = document.createElement("a");
     link.href = RESUME_URL;
     link.download = "Kamran_Resume.pdf";
     link.click();
-  } else {
-    // Mobile → show a temporary on-page "Download Resume" button
-    if (!document.getElementById("mobile-download-link")) {
-      const downloadLink = document.createElement("a");
-      downloadLink.id = "mobile-download-link";
-      downloadLink.href = RESUME_URL;
-      downloadLink.download = "Kamran_Resume.pdf";
-      downloadLink.textContent = "Tap here to download resume";
-      downloadLink.style.position = "fixed";
-      downloadLink.style.bottom = "30px";
-      downloadLink.style.left = "50%";
-      downloadLink.style.transform = "translateX(-50%)";
-      downloadLink.style.padding = "12px 24px";
-      downloadLink.style.backgroundColor = "#2563EB";
-      downloadLink.style.color = "#fff";
-      downloadLink.style.borderRadius = "8px";
-      downloadLink.style.fontSize = "16px";
-      downloadLink.style.textAlign = "center";
-      downloadLink.style.zIndex = "9999";
-      downloadLink.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
-      downloadLink.style.textDecoration = "none";
-
-      document.body.appendChild(downloadLink);
-
-      // Optional: Remove the button after 10 seconds
-      setTimeout(() => {
-        if (downloadLink.parentNode) downloadLink.parentNode.removeChild(downloadLink);
-      }, 10000);
-    }
   }
 };
 
@@ -673,7 +655,6 @@ export default function PortfolioSite() {
               </button>
               <a
                 href={RESUME_URL}
-                onClick={handleResumeClick}
                 download="Kamran_Resume.pdf"
                 className="px-4 py-3 border border-gray-600 rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700 cursor-pointer"
               >
