@@ -26,7 +26,7 @@ const handleResumeClick = (e) => {
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
   if (isMobile) {
-    // Mobile: Try to trigger download first
+    // Step 1: Trigger download
     const link = document.createElement("a");
     link.href = RESUME_URL;
     link.download = "Kamran_Resume.pdf";
@@ -34,11 +34,36 @@ const handleResumeClick = (e) => {
     link.click();
     document.body.removeChild(link);
 
-    // Then open the PDF in a new tab (some mobile browsers may not respect download)
-    window.open(RESUME_URL, "_blank", "noopener,noreferrer");
+    // Step 2: Show prompt to view the PDF
+    if (!document.getElementById("view-pdf-link")) {
+      const viewLink = document.createElement("a");
+      viewLink.id = "view-pdf-link";
+      viewLink.href = RESUME_URL;
+      viewLink.target = "_blank";
+      viewLink.textContent = "View resume";
+      viewLink.style.position = "fixed";
+      viewLink.style.bottom = "30px";
+      viewLink.style.left = "50%";
+      viewLink.style.transform = "translateX(-50%)";
+      viewLink.style.padding = "12px 24px";
+      viewLink.style.backgroundColor = "#2563EB";
+      viewLink.style.color = "#fff";
+      viewLink.style.borderRadius = "8px";
+      viewLink.style.fontSize = "16px";
+      viewLink.style.textAlign = "center";
+      viewLink.style.zIndex = "9999";
+      viewLink.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
+      viewLink.style.textDecoration = "none";
 
+      document.body.appendChild(viewLink);
+
+      // Remove the prompt after 15 seconds
+      setTimeout(() => {
+        if (viewLink.parentNode) viewLink.parentNode.removeChild(viewLink);
+      }, 15000);
+    }
   } else {
-    // Desktop: open and trigger download
+    // Desktop: open in new tab and download automatically
     window.open(RESUME_URL, "_blank", "noopener,noreferrer");
 
     const link = document.createElement("a");
