@@ -20,13 +20,40 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 
 const RESUME_URL = `${import.meta.env.BASE_URL}resume/Kamran_Resume.pdf`;
 
+const handleResumeClick = (e) => {
+  e.preventDefault();
+
+  // Detect if device is mobile
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  // Always open in new tab for preview
+  window.open(RESUME_URL, "_blank", "noopener,noreferrer");
+
+  if (!isMobile) {
+    // On desktop → trigger "Save As" download
+    const link = document.createElement("a");
+    link.href = RESUME_URL;
+    link.download = "Kamran_Resume.pdf";
+    link.click();
+  }
+};
+
 const projects = [
   {
     slug: "lms-mern",
     title: "Learning Management System (MERN)",
     description:
       "Full-featured LMS with authentication, role-based access, course pages, course search and progress tracking.",
-    stack: ["MongoDB", "Express", "React", "Node", "Redux", "JWT", "Multer", "Tailwind"],
+    stack: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+      "Redux",
+      "JWT",
+      "Multer",
+      "Tailwind",
+    ],
     link: "#",
     repo: "https://github.com/mohdkamran-khan/MT",
     details:
@@ -48,13 +75,21 @@ const projects = [
     title: "Event Tracker (MERN)",
     description:
       "Clean & Responsive event tracker built with MERN Stack. CRUD functionality and search features.",
-    stack: ["MongoDB", "Express", "React", "Node", "Axios", "Morgan", "Tailwind"],
+    stack: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+      "Axios",
+      "Morgan",
+      "Tailwind",
+    ],
     link: "#",
     repo: "https://github.com/mohdkamran-khan/Mini-Event-Tracker",
     details:
       "Implemented using MERN for functionality and React/Tailwind for layout. Features responsive design and local storage for event persistence.",
   },
-   {
+  {
     slug: "Rock-Paper-Scissors-JS",
     title: "Rock Paper Scissors Game (JS)",
     description:
@@ -83,7 +118,7 @@ const projects = [
     repo: "https://github.com/mohdkamran-khan/Myntra_Clone",
     details: "Created a shopping app clone with a polished UI/UX.",
   },
-   {
+  {
     slug: "QR-Code-Generator-JS",
     title: "QR Code Generator (JS)",
     description:
@@ -205,10 +240,10 @@ const education = [
 
 export default function PortfolioSite() {
   const [darkMode, setDarkMode] = useState(() => {
-  const storedTheme = localStorage.getItem("theme");
-  // Default to light if nothing is stored
-  return storedTheme ? storedTheme === "dark" : false;
-});
+    const storedTheme = localStorage.getItem("theme");
+    // Default to light if nothing is stored
+    return storedTheme ? storedTheme === "dark" : false;
+  });
 
   // Update localStorage + <html> class whenever darkMode changes
   useEffect(() => {
@@ -317,8 +352,9 @@ export default function PortfolioSite() {
             </button>
             <a
               href={RESUME_URL}
+              onClick={handleResumeClick}
               download="Kamran_Resume.pdf"
-              className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 drop-shadow-lg shadow-lg shadow-blue-500/50 hover:bg-blue-700 flex items-center gap-2"
+              className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 drop-shadow-lg shadow-lg shadow-blue-500/50 hover:bg-blue-700 flex items-center gap-2 cursor-pointer"
             >
               <Download className="h-5 w-5" /> Resume
             </a>
@@ -390,18 +426,21 @@ export default function PortfolioSite() {
           <Code2 className="h-6 w-6" /> About Me
         </h2>
         <p className="text-xl text-slate-600 dark:text-slate-300">
-          I have expertise in end-to-end <b>Web Application Development</b> with
-          the <b>MERN</b> stack, with a strong focus on building scalable and
-          responsive solutions. I am proficient in developing and securing{" "}
-          <b>REST APIs</b> with <b>JWT</b> authentication to ensure robust
-          access control, and have hands-on experience in integrating{" "}
+          I specialize in end-to-end <b>Web Application Development</b> using
+          the <b>MERN</b> stack, with a strong focus on building scalable,
+          responsive and secure solutions. I am proficient in designing and
+          securing <b>REST APIs</b> with <b>JWT</b> authentication to ensure
+          robust access control, and have hands-on experience in integrating{" "}
           <b>Stripe</b>, <b>Razorpay</b>, and <b>Cloudinary</b> for real-world
-          features such as payments and media management. I am skilled in
-          deploying applications using <b>AWS</b>, <b>Docker</b>, and modern{" "}
-          <b>CI/CD</b> pipelines, ensuring reliability and efficiency. Alongside
-          this, I bring a strong foundation in <b>Java</b>, <b>SQL</b>, and{" "}
-          <b>Maven</b>, enabling me to confidently deliver enterprise-level
-          projects.
+          features such as payments and media management. <br /> <br />I am
+          skilled in deploying applications using <b>AWS</b>, <b>Docker</b>, and
+          modern <b>CI/CD</b> pipelines, ensuring reliability and efficiency.
+          Alongside web development, I bring a strong foundation in <b>Java</b>,{" "}
+          <b>SQL</b>, and <b>Maven</b>, enabling me to confidently deliver
+          enterprise-level projects. <br /> <br />
+          Additionally, I have working knowledge of <b>AI/ML</b> fundamentals,
+          enabling me to understand and integrate intelligent features into
+          modern web applications.
         </p>
       </section>
 
@@ -445,7 +484,7 @@ export default function PortfolioSite() {
                   ))}
                 </div>
                 <div className="flex gap-3 mt-5 text-sm items-center justify-center">
-                   {p.repo !== "#" && (
+                  {p.repo !== "#" && (
                     <a
                       href={p.repo}
                       target="_blank"
@@ -455,7 +494,7 @@ export default function PortfolioSite() {
                       <SiGithub className="h-4 w-4" /> Code
                     </a>
                   )}
-                   {p.link !== "#" && (
+                  {p.link !== "#" && (
                     <a
                       href={p.link}
                       target="_blank"
@@ -606,8 +645,9 @@ export default function PortfolioSite() {
               </button>
               <a
                 href={RESUME_URL}
+                onClick={handleResumeClick}
                 download="Kamran_Resume.pdf"
-                className="px-4 py-3 border border-gray-600 rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700"
+                className="px-4 py-3 border border-gray-600 rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700 cursor-pointer"
               >
                 <Download className="h-5 w-5" /> Download Resume
               </a>
@@ -626,13 +666,13 @@ export default function PortfolioSite() {
             transition={{ duration: 0.4 }}
             className="fixed top-6 right-6 z-50"
           >
-            <div className="p-4 rounded-xl bg-green-100 text-green-900 border border-green-300 shadow-lg flex items-center justify-between gap-4 min-w-[280px]">
+            <div className="p-4 rounded-xl bg-blue-100 text-blue-900 border border-blue-300 shadow-lg flex items-center justify-between gap-4 min-w-[280px] overflow-auto">
               <span className="text-sm font-medium">
-                Message received! I’ll get back to you soon.
+                Thanks for reaching out! I’ll get back to you soon.
               </span>
               <button
                 onClick={() => setFormSuccess(false)}
-                className="text-green-900 font-bold hover:text-red-600"
+                className="text-blue-700 font-bold hover:text-red-600"
               >
                 ✖
               </button>
