@@ -57,10 +57,10 @@ const handleResumeClick = (e) => {
 
       document.body.appendChild(viewLink);
 
-      // Remove the prompt after 15 seconds
+      // Remove the prompt after 10 seconds
       setTimeout(() => {
         if (viewLink.parentNode) viewLink.parentNode.removeChild(viewLink);
-      }, 15000);
+      }, 10000);
     }
   } else {
     // Desktop: open in new tab and download automatically
@@ -680,6 +680,7 @@ export default function PortfolioSite() {
               </button>
               <a
                 href={RESUME_URL}
+                onClick={handleResumeClick}
                 download="Kamran_Resume.pdf"
                 className="px-4 py-3 border border-gray-600 rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700 cursor-pointer"
               >
