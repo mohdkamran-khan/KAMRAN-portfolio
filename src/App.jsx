@@ -327,14 +327,14 @@ export default function PortfolioSite() {
   return (
     <div
       id="top"
-      className="min-h-screen bg-gradient-to-b from-slate-200 to-white text-slate-900 dark:from-slate-900 dark:to-slate-950 dark:text-slate-100 font-inter"
+      className="min-h-screen bg-gradient-to-b from-slate-100 to-white text-slate-900 dark:from-slate-900 dark:to-slate-950 dark:text-slate-50 font-inter"
     >
       {/* Navbar */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
         <nav className="max-w-7xl mx-auto px-3 py-5 flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer">
             <Code2 className="h-6 w-6" />
-            <a className="font-semibold tracking-tight text-lg" href="#top">
+            <a className="font-semibold tracking-tight text-lg hover:scale-105" href="#top">
               Kamran.dev
             </a>
           </div>
@@ -415,12 +415,12 @@ export default function PortfolioSite() {
             <span className="inline-flex items-center gap-1">
               <MapPin className="h-5 w-5" /> Lucknow, UP &nbsp;|
             </span>
-            <span className="inline-flex items-center gap-1">
+            <a className="inline-flex items-center gap-1 cursor-pointer hover:scale-105" href="mailto:mohdkamrankhan.dev@gmail.com">
               <Mail className="h-5 w-5" /> mohdkamrankhan.dev@gmail.com &nbsp;|
-            </span>
-            <span className="inline-flex items-center gap-1">
+            </a>
+            <a className="inline-flex items-center gap-1 cursor-pointer hover:scale-105" href="tel:+919415195895">
               <Phone className="h-5 w-5" /> +91 94151 95895
-            </span>
+            </a>
           </div>
           <div className="flex flex-wrap gap-3 lg:gap-4 md:gap-3 pt-5 justify-start items-center">
             <a
@@ -460,7 +460,7 @@ export default function PortfolioSite() {
         <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 cursor-context-menu underline">
           <Code2 className="h-6 w-6" /> About Me
         </h2>
-        <p className="text-xl text-slate-600 dark:text-slate-300">
+        <p className="text-lg text-slate-600 dark:text-slate-300">
           I specialize in end-to-end <b>Web Application Development</b> using
           the <b>MERN</b> stack, with a strong focus on building scalable,
           responsive and secure solutions. I am proficient in designing and
@@ -627,7 +627,7 @@ export default function PortfolioSite() {
 
       {/* Contact */}
       <section id="contact" className="max-w-7xl mx-auto px-6 md:px-12 py-14">
-        <div className="rounded-2xl border p-8 bg-white dark:bg-slate-800 shadow-sm">
+        <div className="rounded-2xl border p-8 bg-white dark:bg-slate-800 shadow-lg">
           <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2 cursor-context-menu">
             <Send className="h-6 w-6" /> Let’s connect to build something great!
           </h2>
@@ -733,10 +733,10 @@ export default function PortfolioSite() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.3 }}
-            className="fixed bottom-6 right-6 z-50 p-3 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition"
+            className="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition m-1"
             aria-label="Back to top"
           >
-            <ArrowUp className="h-5 w-5" />
+            <ArrowUp className="h-5 w-5"/>
           </motion.a>
         )}
       </AnimatePresence>
