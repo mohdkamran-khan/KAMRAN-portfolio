@@ -15,63 +15,12 @@ import {
   FolderKanban,
   Wrench,
   ArrowUp,
+  Menu,
+  X,
 } from "lucide-react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
 const RESUME_URL = `${import.meta.env.BASE_URL}resume/Kamran_Resume.pdf`;
-
-const handleResumeClick = (e) => {
-  e.preventDefault();
-
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-  if (isMobile) {
-    // Step 1: Trigger download
-    const link = document.createElement("a");
-    link.href = RESUME_URL;
-    link.download = "Kamran_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-
-    // Step 2: Show prompt to view the PDF
-    if (!document.getElementById("view-pdf-link")) {
-      const viewLink = document.createElement("a");
-      viewLink.id = "view-pdf-link";
-      viewLink.href = RESUME_URL;
-      viewLink.target = "_blank";
-      viewLink.textContent = "View resume";
-      viewLink.style.position = "fixed";
-      viewLink.style.bottom = "30px";
-      viewLink.style.left = "50%";
-      viewLink.style.transform = "translateX(-50%)";
-      viewLink.style.padding = "12px 24px";
-      viewLink.style.backgroundColor = "#2563EB";
-      viewLink.style.color = "#fff";
-      viewLink.style.borderRadius = "8px";
-      viewLink.style.fontSize = "16px";
-      viewLink.style.textAlign = "center";
-      viewLink.style.zIndex = "9999";
-      viewLink.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
-      viewLink.style.textDecoration = "none";
-
-      document.body.appendChild(viewLink);
-
-      // Remove the prompt after 10 seconds
-      setTimeout(() => {
-        if (viewLink.parentNode) viewLink.parentNode.removeChild(viewLink);
-      }, 10000);
-    }
-  } else {
-    // Desktop: open in new tab and download automatically
-    window.open(RESUME_URL, "_blank", "noopener,noreferrer");
-
-    const link = document.createElement("a");
-    link.href = RESUME_URL;
-    link.download = "Kamran_Resume.pdf";
-    link.click();
-  }
-};
 
 const projects = [
   {
@@ -229,13 +178,13 @@ const skills = [
 
 const experiences = [
   {
-    role: "Full-Stack Web Developer (MERN) — Intern",
+    role: "Full Stack Web Developer (MERN) — Intern",
     company: "MindShift Technologies",
     period: "Jun 2025 – Sep 2025",
     points: [
-      "Built & deployed a Learning Management System (LMS) using MERN stack.",
-      "Optimized REST APIs and DB queries using Query Optimization for faster response times.",
-      "Worked in Agile sprints, using Git for tracking & collaboration.",
+      "Built LMS with JWT authentication, role-based access, and REST APIs.",
+      "Designed optimized MongoDB schemas, reducing API response by 30%.",
+      "Integrated Cloudinary uploads and Stripe payments for 100+ users.",
     ],
   },
 ];
@@ -274,6 +223,61 @@ const education = [
 ];
 
 export default function PortfolioSite() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleResumeClick = (e) => {
+    e.preventDefault();
+
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+    if (isMobile) {
+      // Step 1: Trigger download
+      const link = document.createElement("a");
+      link.href = RESUME_URL;
+      link.download = "Kamran_Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      // Step 2: Show prompt to view the PDF
+      if (!document.getElementById("view-pdf-link")) {
+        const viewLink = document.createElement("a");
+        viewLink.id = "view-pdf-link";
+        viewLink.href = RESUME_URL;
+        viewLink.target = "_blank";
+        viewLink.textContent = "View resume";
+        viewLink.style.position = "fixed";
+        viewLink.style.bottom = "30px";
+        viewLink.style.left = "50%";
+        viewLink.style.transform = "translateX(-50%)";
+        viewLink.style.padding = "12px 24px";
+        viewLink.style.backgroundColor = "#2563EB";
+        viewLink.style.color = "#fff";
+        viewLink.style.borderRadius = "8px";
+        viewLink.style.fontSize = "16px";
+        viewLink.style.textAlign = "center";
+        viewLink.style.zIndex = "9999";
+        viewLink.style.boxShadow = "0 4px 6px rgba(0,0,0,0.1)";
+        viewLink.style.textDecoration = "none";
+
+        document.body.appendChild(viewLink);
+
+        // Remove the prompt after 10 seconds
+        setTimeout(() => {
+          if (viewLink.parentNode) viewLink.parentNode.removeChild(viewLink);
+        }, 10000);
+      }
+    } else {
+      // Desktop: open in new tab and download automatically
+      window.open(RESUME_URL, "_blank", "noopener,noreferrer");
+
+      const link = document.createElement("a");
+      link.href = RESUME_URL;
+      link.download = "Kamran_Resume.pdf";
+      link.click();
+    }
+  };
+
   const [darkMode, setDarkMode] = useState(() => {
     const storedTheme = localStorage.getItem("theme");
     // Default to light if nothing is stored
@@ -332,49 +336,57 @@ export default function PortfolioSite() {
       {/* Navbar */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
         <nav className="max-w-7xl mx-auto px-3 py-5 flex items-center justify-between">
+          {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer">
             <Code2 className="h-6 w-6" />
-            <a className="font-semibold tracking-tight text-lg hover:scale-105" href="#top">
+            <a
+              className="font-semibold tracking-tight text-lg hover:scale-105"
+              href="#top"
+            >
               Kamran.dev
             </a>
           </div>
-          <div className="flex items-center gap-5 text-base">
+
+          {/* Desktop Nav */}
+          <div className="hidden lg:flex items-center gap-5 text-base">
             <a
               href="#about"
-              className="hover:underline hidden sm:flex items-center gap-1"
+              className="hover:underline flex items-center gap-1"
             >
               <Code2 className="h-4 w-4" /> About Me
             </a>
             <a
               href="#projects"
-              className="hover:underline hidden sm:flex items-center gap-1"
+              className="hover:underline flex items-center gap-1"
             >
               <FolderKanban className="h-4 w-4" /> Projects
             </a>
             <a
               href="#skills"
-              className="hover:underline hidden sm:flex items-center gap-1"
+              className="hover:underline flex items-center gap-1"
             >
               <Wrench className="h-4 w-4" /> Skills
             </a>
             <a
               href="#experience"
-              className="hover:underline hidden sm:flex items-center gap-1"
+              className="hover:underline flex items-center gap-1"
             >
               <Briefcase className="h-4 w-4" /> Experience
             </a>
             <a
               href="#education"
-              className="hover:underline hidden sm:flex items-center gap-1"
+              className="hover:underline flex items-center gap-1"
             >
               <GraduationCap className="h-4 w-4" /> Education
             </a>
             <a
               href="#contact"
-              className="hover:underline hidden sm:flex items-center gap-1"
+              className="hover:underline flex items-center gap-1"
             >
               <Send className="h-4 w-4" /> Contact
             </a>
+
+            {/* Always visible */}
             <button
               onClick={() => setDarkMode(!darkMode)}
               className="p-2 rounded-full border hover:scale-105 hover:shadow-2xl border-slate-300 dark:border-slate-700"
@@ -385,6 +397,7 @@ export default function PortfolioSite() {
                 <Moon className="h-5 w-5" />
               )}
             </button>
+
             <a
               href={RESUME_URL}
               onClick={handleResumeClick}
@@ -394,7 +407,107 @@ export default function PortfolioSite() {
               <Download className="h-5 w-5" /> Resume
             </a>
           </div>
+
+          {/* Mobile Actions (always visible) */}
+          <div className="flex items-center gap-3 lg:hidden">
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              className="p-2 rounded-full border border-slate-300 dark:border-slate-700"
+            >
+              {darkMode ? (
+                <Sun className="h-5 w-5" />
+              ) : (
+                <Moon className="h-5 w-5" />
+              )}
+            </button>
+
+            <a
+              href={RESUME_URL}
+              onClick={handleResumeClick}
+              download="Kamran_Resume.pdf"
+              className="px-3 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-1 cursor-pointer text-sm"
+            >
+              <Download className="h-4 w-4" /> Resume
+            </a>
+
+            {/* Hamburger */}
+            <div className="lg:hidden">
+              <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="p-2 rounded-md relative w-6 h-6"
+              >
+                <motion.span
+                  className="absolute top-0 left-0 w-6 h-0.5 bg-slate-900 dark:bg-slate-50 rounded"
+                  animate={isOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <motion.span
+                  className="absolute top-2.5 left-0 w-6 h-0.5 bg-slate-900 dark:bg-slate-50 rounded"
+                  animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                />
+                <motion.span
+                  className="absolute top-5 left-0 w-6 h-0.5 bg-slate-900 dark:bg-slate-50 rounded"
+                  animate={
+                    isOpen ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }
+                  }
+                  transition={{ duration: 0.3 }}
+                />
+              </button>
+            </div>
+          </div>
         </nav>
+        {/* Mobile Menu Dropdown with animation */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.25, ease: "easeInOut" }}
+              className="lg:hidden px-4 pb-4 flex flex-col gap-4 
+                 bg-white/50 dark:bg-slate-900/50 
+                 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 rounded-b-xl items-center"
+            >
+              <a
+                href="#about"
+                className="hover:underline flex items-center gap-1 mt-4"
+              >
+                <Code2 className="h-4 w-4" /> About Me
+              </a>
+              <a
+                href="#projects"
+                className="hover:underline flex items-center gap-1"
+              >
+                <FolderKanban className="h-4 w-4" /> Projects
+              </a>
+              <a
+                href="#skills"
+                className="hover:underline flex items-center gap-1"
+              >
+                <Wrench className="h-4 w-4" /> Skills
+              </a>
+              <a
+                href="#experience"
+                className="hover:underline flex items-center gap-1"
+              >
+                <Briefcase className="h-4 w-4" /> Experience
+              </a>
+              <a
+                href="#education"
+                className="hover:underline flex items-center gap-1"
+              >
+                <GraduationCap className="h-4 w-4" /> Education
+              </a>
+              <a
+                href="#contact"
+                className="hover:underline flex items-center gap-1"
+              >
+                <Send className="h-4 w-4" /> Contact
+              </a>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </header>
 
       {/* Hero */}
@@ -415,10 +528,16 @@ export default function PortfolioSite() {
             <span className="inline-flex items-center gap-1">
               <MapPin className="h-5 w-5" /> Lucknow, UP &nbsp;|
             </span>
-            <a className="inline-flex items-center gap-1 cursor-pointer hover:scale-105" href="mailto:mohdkamrankhan.dev@gmail.com">
+            <a
+              className="inline-flex items-center gap-1 cursor-pointer hover:scale-105"
+              href="mailto:mohdkamrankhan.dev@gmail.com"
+            >
               <Mail className="h-5 w-5" /> mohdkamrankhan.dev@gmail.com &nbsp;|
             </a>
-            <a className="inline-flex items-center gap-1 cursor-pointer hover:scale-105" href="tel:+919415195895">
+            <a
+              className="inline-flex items-center gap-1 cursor-pointer hover:scale-105"
+              href="tel:+919415195895"
+            >
               <Phone className="h-5 w-5" /> +91 94151 95895
             </a>
           </div>
@@ -736,7 +855,7 @@ export default function PortfolioSite() {
             className="fixed bottom-8 right-8 z-50 p-3 rounded-full bg-blue-600 text-white shadow-lg hover:bg-blue-700 transition m-1"
             aria-label="Back to top"
           >
-            <ArrowUp className="h-5 w-5"/>
+            <ArrowUp className="h-5 w-5" />
           </motion.a>
         )}
       </AnimatePresence>
