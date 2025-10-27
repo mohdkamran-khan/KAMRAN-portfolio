@@ -210,6 +210,11 @@ const education = [
     org: "Knowledge Gate",
     year: "June 2025",
   },
+   {
+    title: "React Hooks Crash Course",
+    org: "Great Stack",
+    year: "October 2025",
+  },
   {
     title: "Master's in Biotechnology (Hons., 8.8 CGPI)",
     org: "Integral University, Lucknow",
