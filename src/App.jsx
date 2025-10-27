@@ -191,7 +191,7 @@ const experiences = [
 
 const education = [
   {
-    title: "Diploma In Fullstack Java Programming",
+    title: "Post Graduate Certification In Fullstack Java Programming",
     org: "Jain University, Bengaluru",
     year: "Sept 2025",
   },
