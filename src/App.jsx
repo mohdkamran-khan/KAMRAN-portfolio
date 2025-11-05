@@ -15,8 +15,6 @@ import {
   FolderKanban,
   Wrench,
   ArrowUp,
-  Menu,
-  X,
 } from "lucide-react";
 import { SiGithub, SiLinkedin } from "react-icons/si";
 
@@ -155,19 +153,20 @@ const skills = [
       "Axios",
       "Tailwind",
       "Bootstrap",
+      "ShadCN/UI",
     ],
   },
-  { group: "Databases", items: ["MongoDB", "AWS", "MySQL", "RDBMS"] },
+  { group: "Databases", items: ["MongoDB", "AWS", "MySQL", "GraphQL", "Oracle", "RDBMS"] },
   {
     group: "Tools & Utilities",
     items: [
       "Git",
-      "VS Code",
-      "IntelliJ IDEA",
-      "Eclipse",
+      "GitHub",
+      "Amazon Q Developer",
+      "Blockchain Development",
+      "Prompt Engineering",
       "Postman",
       "Morgan",
-      "Apache Tomcat",
       "Maven",
       "Multer",
       "Stripe",
@@ -201,19 +200,39 @@ const education = [
     year: "Dec 2025",
   },
   {
+    title: "Fundamentals of AI/ML",
+    org: "AWS Training & Certification",
+    year: "Nov 2025",
+  },
+  {
     title: "AI/ML Certification Course",
     org: "Knowledge Gate",
     year: "Dec 2025",
+  },
+  {
+    title: "Introduction to Prompt Engineering with GitHub Copilot",
+    org: "Microsoft & SkillUP",
+    year: "Nov 2025",
+  },
+  {
+    title: "Amazon Q Developer",
+    org: "AWS Training & Certification",
+    year: "Nov 2025",
+  },
+  {
+    title: " Blockchain Developer Training",
+    org: "simplilearn & SkillUP",
+    year: "Nov 2025",
   },
   {
     title: "JavaScript Certification Course",
     org: "Knowledge Gate",
     year: "June 2025",
   },
-   {
+  {
     title: "React Hooks Crash Course",
     org: "Great Stack",
-    year: "October 2025",
+    year: "Oct 2025",
   },
   {
     title: "Master's in Biotechnology (Hons., 8.8 CGPI)",
@@ -586,7 +605,7 @@ export default function PortfolioSite() {
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300">
           I specialize in end-to-end <b>Web Application Development</b> using
-          the <b>MERN</b> stack, with a strong focus on building scalable,
+          <b>MERN</b> stack, with a strong focus on building scalable,
           responsive and secure solutions. I am proficient in designing and
           securing <b>REST APIs</b> with <b>JWT</b> authentication to ensure
           robust access control, and have hands-on experience in integrating{" "}
@@ -597,9 +616,19 @@ export default function PortfolioSite() {
           Alongside web development, I bring a strong foundation in <b>Java</b>,{" "}
           <b>SQL</b>, and <b>Maven</b>, enabling me to confidently deliver
           enterprise-level projects. <br /> <br />
-          Additionally, I have working knowledge of <b>AI/ML</b> fundamentals,
-          enabling me to understand and integrate intelligent features into
-          modern web applications.
+          In addition, I have practical experience in{" "}
+          <b>Blockchain Development</b>, including creating and managing smart
+          contracts, understanding decentralized systems, and integrating{" "}
+          <b>Web3</b> technologies into web applications. <br /> <br />
+          As an{" "}
+          <b>Amazon Q Developer</b>, I leverage <b>AI</b>-powered developer
+          tools to optimize productivity, streamline workflows, and integrate
+          intelligent automation into development lifecycles. <br /> <br />
+          Furthermore, I
+          possess a working knowledge of <b>AI/ML</b> fundamentals and{" "}
+          <b>Prompt Engineering</b>, which enables me to design and integrate
+          intelligent, adaptive features into modern web applications, enhancing
+          user experience and operational efficiency.
         </p>
       </section>
 
