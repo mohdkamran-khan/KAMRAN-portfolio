@@ -16,7 +16,13 @@ import {
   Wrench,
   ArrowUp,
 } from "lucide-react";
-import { SiGithub, SiLinkedin } from "react-icons/si";
+import {
+  SiCredly,
+  SiDiscord,
+  SiGithub,
+  SiKaggle,
+  SiLinkedin,
+} from "react-icons/si";
 
 const RESUME_URL = `${import.meta.env.BASE_URL}resume/Kamran_Resume.pdf`;
 
@@ -156,7 +162,10 @@ const skills = [
       "ShadCN/UI",
     ],
   },
-  { group: "Databases", items: ["MongoDB", "AWS", "MySQL", "GraphQL", "Oracle", "RDBMS"] },
+  {
+    group: "Databases",
+    items: ["MongoDB", "AWS", "MySQL", "GraphQL", "Oracle", "RDBMS"],
+  },
   {
     group: "Tools & Utilities",
     items: [
@@ -215,13 +224,28 @@ const education = [
     year: "Nov 2025",
   },
   {
+    title: "Fundamentals of LLM",
+    org: "Hugging Face Instructors",
+    year: "Nov 2025",
+  },
+  {
     title: "Amazon Q Developer",
     org: "AWS Training & Certification",
     year: "Nov 2025",
   },
   {
-    title: " Blockchain Developer Training",
-    org: "simplilearn & SkillUP",
+    title: "Blockchain Developer Training",
+    org: "Simplilearn & SkillUP",
+    year: "Nov 2025",
+  },
+  {
+    title: "Cybersecurity Fundamentals ",
+    org: "IBM",
+    year: "Nov 2025",
+  },
+  {
+    title: "Introduction to Machine Learning",
+    org: "Kaggle",
     year: "Nov 2025",
   },
   {
@@ -606,29 +630,30 @@ export default function PortfolioSite() {
         <p className="text-lg text-slate-600 dark:text-slate-300">
           I specialize in end-to-end <b>Web Application Development</b> using
           <b>MERN</b> stack, with a strong focus on building scalable,
-          responsive and secure solutions. I am proficient in designing and
-          securing <b>REST APIs</b> with <b>JWT</b> authentication to ensure
-          robust access control, and have hands-on experience in integrating{" "}
-          <b>Stripe</b>, <b>Razorpay</b>, and <b>Cloudinary</b> for real-world
-          features such as payments and media management. <br /> <br />I am
-          skilled in deploying applications using <b>AWS</b>, <b>Docker</b>, and
-          modern <b>CI/CD</b> pipelines, ensuring reliability and efficiency.
-          Alongside web development, I bring a strong foundation in <b>Java</b>,{" "}
-          <b>SQL</b>, and <b>Maven</b>, enabling me to confidently deliver
-          enterprise-level projects. <br /> <br />
-          In addition, I have practical experience in{" "}
-          <b>Blockchain Development</b>, including creating and managing smart
-          contracts, understanding decentralized systems, and integrating{" "}
-          <b>Web3</b> technologies into web applications. <br /> <br />
-          As an{" "}
-          <b>Amazon Q Developer</b>, I leverage <b>AI</b>-powered developer
-          tools to optimize productivity, streamline workflows, and integrate
-          intelligent automation into development lifecycles. <br /> <br />
-          Furthermore, I
-          possess a working knowledge of <b>AI/ML</b> fundamentals and{" "}
-          <b>Prompt Engineering</b>, which enables me to design and integrate
-          intelligent, adaptive features into modern web applications, enhancing
-          user experience and operational efficiency.
+          responsive and secure solutions. I design and secure <b>REST APIs</b>{" "}
+          with <b>JWT</b> authentication to ensure robust access control, and
+          have hands-on experience in integrating <b>Stripe</b>, <b>Razorpay</b>
+          , and <b>Cloudinary</b> for real-world features such as payments and
+          media management. <br /> <br />I am skilled in deploying applications
+          using <b>AWS</b>, <b>Docker</b>, and modern <b>CI/CD</b> pipelines,
+          ensuring reliability and efficiency. Alongside web development, I
+          bring a strong foundation in <b>Java</b>, <b>SQL</b>, and <b>Maven</b>
+          , enabling me to confidently deliver enterprise-level projects. <br />{" "}
+          <br />
+          In addition, I have experience in <b>Blockchain Development</b>,
+          including creating and managing smart contracts, understanding
+          decentralized systems, and integrating <b>Web3</b> technologies into
+          web applications. <br /> <br />
+          As an <b>Amazon Q Developer</b>, I leverage <b>AI</b>-powered
+          developer tools to enhance productivity, streamline workflows, and
+          integrate intelligent automation into development lifecycles. <br />{" "}
+          <br />
+          Additionaly my knowledge of{" "}
+          <b>Artificial Intelligence, Machine Learning, LLM</b>,{" "}
+          <b>Prompt Engineering</b> and <b>Cybersecurity</b> enables me to
+          design and integrate intelligent, secure and adaptive features into
+          modern web applications, enhancing user experience and operational
+          efficiency.
         </p>
       </section>
 
@@ -875,7 +900,54 @@ export default function PortfolioSite() {
       </div>
       {/* Footer */}
       <footer className="py-6 text-center text-sm text-slate-500 cursor-context-menu">
-        © {new Date().getFullYear()} | Mohd Kamran Khan
+        <div className="flex flex-wrap items-center justify-center gap-3 mb-3">
+          <a
+            href="https://github.com/mohdkamran-khan"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+          >
+            <SiGithub className="h-4 w-4" /> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mohdkamran-khan"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+          >
+            <SiLinkedin className="h-4 w-4" /> LinkedIn
+          </a>
+          <a
+            href="https://discordapp.com/users/1438054169339760721"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Discord"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+          >
+            <SiDiscord className="h-4 w-4" /> Discord
+          </a>
+          <a
+            href="https://www.kaggle.com/mohdkhankamran"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Kaggle"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+          >
+            <SiKaggle className="h-4 w-4" /> Kaggle
+          </a>
+          <a
+            href="https://www.credly.com/users/mohdkamrankhan"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Credly"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+          >
+            <SiCredly className="h-4 w-4" /> Credly
+          </a>
+        </div>
+        <br />© {new Date().getFullYear()} | Mohd Kamran Khan
       </footer>
 
       <AnimatePresence>
