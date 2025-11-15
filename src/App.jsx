@@ -160,6 +160,8 @@ const skills = [
       "Tailwind",
       "Bootstrap",
       "ShadCN/UI",
+      "Machine Learning",
+      "LLM",
     ],
   },
   {
@@ -171,9 +173,16 @@ const skills = [
     items: [
       "Git",
       "GitHub",
+      "VS Code",
+      "Eclipse",
+      "Intelli J",
+      "Cursor",
+      "Postman",
+      "Apache Tomcat",
       "Amazon Q Developer",
       "Blockchain Development",
       "Prompt Engineering",
+      "Cybersecurity",
       "Postman",
       "Morgan",
       "Maven",
@@ -628,7 +637,7 @@ export default function PortfolioSite() {
           <Code2 className="h-6 w-6" /> About Me
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300">
-          I specialize in end-to-end <b>Web Application Development</b> using
+          I specialize in end-to-end <b>Web Application Development</b> using{" "}
           <b>MERN</b> stack, with a strong focus on building scalable,
           responsive and secure solutions. I design and secure <b>REST APIs</b>{" "}
           with <b>JWT</b> authentication to ensure robust access control, and
