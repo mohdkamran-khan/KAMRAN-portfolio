@@ -637,19 +637,21 @@ export default function PortfolioSite() {
           <Code2 className="h-6 w-6" /> About Me
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300">
-          I specialize in end-to-end <b>Web Development</b> using{" "}
-          <b>MERN</b> stack, with a strong focus on building scalable,
-          responsive and secure solutions. I design and implement <b>REST APIs</b>{" "}
-          with <b>JWT</b> authentication to ensure robust access control, and
-          have hands-on experience in integrating <b>Stripe</b>, <b>Razorpay</b>
-          , and <b>Cloudinary</b> for real-world features of payments and
-          media management. <br /> <br />
-          I am skilled in deploying applications using <b>AWS</b>, <b>Docker</b>, and modern <b>CI/CD</b> pipelines,
-          ensuring reliability and efficiency. Alongside web development, I
-          bring a strong foundation in <b>Java</b>, <b>SQL</b>, and <b>Maven</b>
+          I specialize in end-to-end <b>Web Development</b> using <b>MERN</b>{" "}
+          stack, with a strong focus on building scalable, responsive and secure
+          solutions. I design and implement <b>REST APIs</b> with <b>JWT</b>{" "}
+          authentication to ensure robust access control, and have hands-on
+          experience in integrating <b>Stripe</b>, <b>Razorpay</b>, and{" "}
+          <b>Cloudinary</b> for real-world features of payments and media
+          management. <br /> <br />I am skilled in deploying applications using{" "}
+          <b>AWS</b>, <b>Docker</b>, and modern <b>CI/CD</b> pipelines, ensuring
+          reliability and efficiency. Alongside web development, I bring a
+          strong foundation in <b>Java</b>, <b>SQL</b>, and <b>Maven</b>
           , enabling me to confidently deliver enterprise-level projects. <br />{" "}
-          <br />
-          I also work with <b>Blockchain</b> and <b>Web3</b> integrations, and leverage <b>AI/ML, LLMs, Cybersecurity</b> and <b>Prompt Engineering</b> to build smarter and more adaptive application features.
+          <br />I also work with <b>Blockchain</b> and <b>Web3</b> integrations,
+          and leverage <b>AI/ML, LLMs, Cybersecurity</b> and{" "}
+          <b>Prompt Engineering</b> to build smarter and more adaptive
+          application features.
         </p>
       </section>
 
@@ -943,20 +945,19 @@ export default function PortfolioSite() {
             <SiCredly className="h-4 w-4" /> Credly
           </a>
           <a
-  href="https://www.commudle.com/users/mohdkamrankhan"
-  target="_blank"
-  rel="noreferrer"
-  aria-label="Commudle"
-  className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
->
-  <img
-    src="commudle-logo.png"
-    alt="Commudle"
-    className="h-4 w-4 object-contain"
-  />
-  Commudle
-</a>
-
+            href="https://www.commudle.com/users/mohdkamrankhan"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Commudle"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+          >
+            <img
+              src="commudle-logo.png"
+              alt="Commudle"
+              className="h-4 w-4 object-contain"
+            />
+            Commudle
+          </a>
         </div>
         <br />© {new Date().getFullYear()} | Mohd Kamran Khan
       </footer>
