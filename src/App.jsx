@@ -23,6 +23,7 @@ import {
   SiKaggle,
   SiLinkedin,
 } from "react-icons/si";
+import { GrAchievement } from "react-icons/gr";
 
 const RESUME_URL = `${import.meta.env.BASE_URL}resume/Kamran_Resume.pdf`;
 
@@ -76,6 +77,40 @@ const projects = [
     repo: "https://github.com/mohdkamran-khan/Mini-Event-Tracker",
     details:
       "Implemented using MERN for functionality and React/Tailwind for layout. Features responsive design and local storage for event persistence.",
+  },
+  {
+    slug: "Ask-Your-PDF",
+    title: "Ask Your PDF (React) - Google & Kaggle Capstone Project",
+    description:
+      "Clean & responsive webpage built with React.js where you can upload any PDF and ask AI to summarize & ask related questions.",
+    stack: [
+      "React",
+      "Node",
+      "Express",
+      "Tailwind",
+      "Multer",
+    ],
+    link: "#",
+    repo: "https://github.com/mohdkamran-khan/AskYourPDF",
+    details:
+      "Implemented using React for functionality and Tailwind for layout. Features responsive design & uses Fetch API for PDF parsing.",
+  },
+  {
+    slug: "Portfolio-React",
+    title: "Portfolio (React)",
+    description:
+      "Simple & responsive portfolio built with React.js to represent my skills & achievements.",
+    stack: [
+      "React",
+      "Node",
+      "Tailwind",
+      "Framer Motion",
+      "Form Submit"
+    ],
+    link: "https://mohdkamran-khan.github.io/KAMRAN-portfolio/",
+    repo: "https://github.com/mohdkamran-khan/KAMRAN-portfolio",
+    details:
+      "Implemented using React for functionality and Tailwind for layout. Features responsive design & contact form.",
   },
   {
     slug: "Rock-Paper-Scissors-JS",
@@ -189,6 +224,8 @@ const skills = [
       "Multer",
       "Stripe",
       "Cloudinary",
+      "Framer Motion",
+      "Form Submit"
     ],
   },
 ];
@@ -202,6 +239,19 @@ const experiences = [
       "Built LMS with JWT authentication, role-based access, and REST APIs.",
       "Designed optimized MongoDB schemas, reducing API response by 30%.",
       "Integrated Cloudinary uploads and Stripe payments for 100+ users.",
+    ],
+  },
+];
+
+const extracurricular = [
+  {
+    points: [
+      "Participated in 5 day AI Agents Intensive Course by Google & Kaggle & built a Capstone Project 'Ask Your PDF' that uses AI to summarize PDF's & answer related questions.",
+      "Participated in Google DevFest, Lucknow 2025.",
+      "Participated in Google Cloud Skills Boost and achieved Level3: Gen AI Badge.",
+      "Achieved Diamond League Badge on Google Cloud Skills.",
+      "Participated in Ethical Hacking Workshop by Skill Lab & AITD.",
+      "5+ ★ & 2 achievement badges on GitHub.",
     ],
   },
 ];
@@ -796,6 +846,30 @@ export default function PortfolioSite() {
                 {ed.org}
               </p>
               <p className="text-sm text-slate-500">{ed.year}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Extracurricular */}
+      <section
+        id="extracurricular"
+        className="max-w-7xl mx-auto px-6 md:px-12 mt-12"
+      >
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 cursor-context-menu underline">
+          <GrAchievement className="h-6 w-6" /> Extracurricular & Achievements
+        </h2>
+        <div className="grid gap-6">
+          {extracurricular.map((ext, i) => (
+            <div
+              key={i}
+              className="rounded-2xl border p-6 bg-white dark:bg-slate-800 shadow-sm"
+            >
+              <ul className="list-disc pl-5 space-y-2 text-base">
+                {ext.points.map((pt, idx) => (
+                  <li key={idx}>{pt}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
