@@ -6,7 +6,7 @@
   <!-- Portfolio Homepage -->
 <url>
     <loc>https://mohdkamran-khan.github.io/KAMRAN-portfolio/</loc>
-    <lastmod>2025-11-17</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://mohdkamran-khan.github.io/KAMRAN-portfolio/banner.png</image:loc>
@@ -30,14 +30,14 @@
   <!-- GitHub Profile -->
   <url>
     <loc>https://github.com/mohdkamran-khan</loc>
-    <lastmod>2025-11-17</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <priority>0.6</priority>
   </url>
 
   <!-- LinkedIn Profile -->
   <url>
     <loc>https://www.linkedin.com/in/mohdkamran-khan/</loc>
-    <lastmod>2025-11-17</lastmod>
+    <lastmod>2025-11-28</lastmod>
     <priority>0.6</priority>
   </url>
 
