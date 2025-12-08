@@ -124,6 +124,17 @@ const projects = [
       "Implemented using JavaScript for game logic and HTML/CSS for layout. Features score tracking and responsive design.",
   },
   {
+    slug: "airbnb-clone",
+    title: "Airbnb Clone (Node.js)",
+    description:
+      "An Airbnb inspired clone completely rendered via backend with database management, user authentication and media management.",
+    stack: ["Node.js", "HTML", "EJS", "Tailwind", "MongoDB"],
+    link: "#",
+    repo: "https://github.com/mohdkamran-khan/Airbnb-Clone",
+    details:
+      "Clone of Airbnb rendered completely from backend using Node.js",
+  },
+  {
     slug: "hotstar-clone",
     title: "Disney+ Hotstar Clone (React)",
     description: "Responsive UI with reusable components. Hosted on Netlify.",
@@ -179,7 +190,7 @@ const projects = [
 const skills = [
   {
     group: "Languages",
-    items: ["Java", "JavaScript", "SQL", "HTML", "CSS", "JSON"],
+    items: ["Java", "JavaScript", "SQL", "HTML", "CSS", "JSON", "EJS"],
   },
   {
     group: "Frameworks & Libraries",
@@ -201,7 +212,7 @@ const skills = [
   },
   {
     group: "Databases",
-    items: ["MongoDB", "AWS", "MySQL", "GraphQL", "Oracle", "RDBMS"],
+    items: ["MongoDB", "AWS", "Azure", "MySQL", "GraphQL", "Oracle", "RDBMS"],
   },
   {
     group: "Tools & Utilities",
@@ -231,6 +242,16 @@ const skills = [
 ];
 
 const experiences = [
+  {
+    role: "Frontend Developer (React) — Intern",
+    company: "Skillfied Mentor",
+    period: "Dec 2025 – Mar 2026",
+    points: [
+      "Strengthening my React skill.",
+      "Gaining hands-on experience and contributing to real world projects.",
+      "Learning to work in agile sprints & collaborating with colleagues.",
+    ],
+  },
   {
     role: "Full Stack Web Developer (MERN) — Intern",
     company: "MindShift Technologies",
