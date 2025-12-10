@@ -203,6 +203,7 @@ const skills = [
       "JSTL",
       "JWT",
       "Axios",
+      "WordPress",
       "Tailwind",
       "Bootstrap",
       "ShadCN/UI",
@@ -212,7 +213,7 @@ const skills = [
   },
   {
     group: "Databases",
-    items: ["MongoDB", "AWS", "Azure", "MySQL", "GraphQL", "Oracle", "RDBMS"],
+    items: ["MongoDB", "AWS", "Azure", "MySQL", "PHP", "GraphQL", "Oracle", "RDBMS"],
   },
   {
     group: "Tools & Utilities",
@@ -236,7 +237,9 @@ const skills = [
       "Stripe",
       "Cloudinary",
       "Framer Motion",
-      "Form Submit"
+      "Form Submit",
+      "SendGrid",
+      "Low-Level Design",
     ],
   },
 ];
@@ -272,6 +275,8 @@ const extracurricular = [
       "Participated in Google Cloud Skills Boost and achieved Level3: Gen AI Badge.",
       "Achieved Diamond League Badge on Google Cloud Skills.",
       "Participated in Ethical Hacking Workshop by Skill Lab & AITD.",
+      "Participated in Low-level Design Masterclass by Scaler Academy.",
+      "Participated in Web Development Bootcamp with HTML CSS PHP MySQL Wordpress by Udemy",
       "Student Council & Alumni Association — Managed projects, student relations, convocations and fests.",
       "NSS — Volunteered in community health and education programs.",
       "Participated in Inter Departmental University Sports Meet - Cricket & Volley Ball.",
@@ -340,6 +345,11 @@ const education = [
     title: "React Hooks Crash Course",
     org: "Great Stack",
     year: "Oct 2025",
+  },
+  {
+    title: "Professional Diploma: Customer Centricity & Design Thinking",
+    org: "Udemy",
+    year: "Dec 2025",
   },
   {
     title: "Master's in Biotechnology (Hons., 8.8 CGPI)",
