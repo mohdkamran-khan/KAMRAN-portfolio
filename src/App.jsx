@@ -135,6 +135,17 @@ const projects = [
       "Clone of Airbnb rendered completely from backend using Node.js",
   },
   {
+    slug: "airbnb-frontend",
+    title: "Airbnb Frontend Clone (React.js)",
+    description:
+      "An Airbnb inspired fully responsive frontend clone built in React.js, Vite & Tailwind .",
+    stack: ["React.js", "HTML", "JS", "Vite", "Tailwind"],
+    link: "https://mohdkamran-khan.github.io/Airbnb-Frontend/",
+    repo: "https://github.com/mohdkamran-khan/Airbnb-Frontend",
+    details:
+      "Clone of Airbnb frontend built using React.js & Tailwind.",
+  },
+  {
     slug: "hotstar-clone",
     title: "Disney+ Hotstar Clone (React)",
     description: "Responsive UI with reusable components. Hosted on Netlify.",
