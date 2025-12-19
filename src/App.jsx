@@ -213,11 +213,10 @@ const skills = [
       "JSP/Servlet",
       "JSTL",
       "JWT",
-      "Axios",
       "WordPress",
       "Tailwind",
       "Bootstrap",
-      "ShadCN/UI",
+      "ShadCN",
       "Machine Learning",
       "LLM",
     ],
@@ -230,21 +229,11 @@ const skills = [
     group: "Tools & Utilities",
     items: [
       "Git",
-      "GitHub",
-      "VS Code",
-      "Eclipse",
-      "Intelli J",
       "Cursor",
-      "Postman",
-      "Apache Tomcat",
       "Amazon Q Developer",
       "Blockchain Development",
       "Prompt Engineering",
       "Cybersecurity",
-      "Postman",
-      "Morgan",
-      "Maven",
-      "Multer",
       "Stripe",
       "Cloudinary",
       "Framer Motion",
@@ -672,13 +661,13 @@ export default function PortfolioSite() {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
             Mohd Kamran Khan
           </h1>
-          <p className="mt-3 text-lg md:text-xl text-slate-600 dark:text-slate-300">
+          <p className="mt-3 text-lg md:text-xl text-slate-600 dark:text-slate-300 cursor-context-menu">
             Full-Stack Developer • MERN & Java • Building clean, scalable web
             apps
           </p>
           <div className="flex flex-wrap items-center gap-3 text-base text-slate-600 dark:text-slate-300 mt-4">
             <span className="inline-flex items-center gap-1">
-              <MapPin className="h-5 w-5" /> Lucknow, UP &nbsp;|
+              <MapPin className="h-5 w-5 cursor-context-menu" /> Lucknow, UP &nbsp;|
             </span>
             <a
               className="inline-flex items-center gap-1 cursor-pointer hover:scale-105"
