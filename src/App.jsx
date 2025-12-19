@@ -666,8 +666,8 @@ export default function PortfolioSite() {
             apps
           </p>
           <div className="flex flex-wrap items-center gap-3 text-base text-slate-600 dark:text-slate-300 mt-4">
-            <span className="inline-flex items-center gap-1">
-              <MapPin className="h-5 w-5 cursor-context-menu" /> Lucknow, UP &nbsp;|
+            <span className="inline-flex items-center gap-1 cursor-context-menu">
+              <MapPin className="h-5 w-5" /> Lucknow, UP &nbsp;|
             </span>
             <a
               className="inline-flex items-center gap-1 cursor-pointer hover:scale-105"
