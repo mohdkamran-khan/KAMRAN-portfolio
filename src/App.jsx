@@ -96,6 +96,23 @@ const projects = [
       "Implemented using React for functionality and Tailwind for layout. Features responsive design & uses Fetch API for PDF parsing.",
   },
   {
+    slug: "Gemini-Chat",
+    title: "Gemini-Chat (MERN)",
+    description:
+      "An AI powered chat application built using Google Gemini's API with MERN Stack. The app allows users to interact with Gemini models in real time with conversation history management.",
+    stack: [
+      "React",
+      "Node",
+      "Express",
+      "MongoDB",
+      "Tailwind",
+    ],
+    link: "#",
+    repo: "https://github.com/mohdkamran-khan/Gemini-Chat",
+    details:
+      "Implemented using React for functionality and Tailwind for layout. Features responsive design & uses Fetch API & MongoDB for data management.",
+  },
+  {
     slug: "Portfolio-React",
     title: "Portfolio (React)",
     description:
