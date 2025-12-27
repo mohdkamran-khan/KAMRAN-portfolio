@@ -79,6 +79,22 @@ const projects = [
       "Implemented using MERN for functionality and React/Tailwind for layout. Features responsive design and local storage for event persistence.",
   },
   {
+    slug: "Admin Panel Dashboard-React",
+    title: "Admin Panel Dashboard (React)",
+    description:
+      "Responsive Admin Dashboard built with React, Vite & Recharts. Features responsive design, data visualization graphs, top products & theme support.",
+    stack: [
+      "React",
+      "Vite",
+      "Recharts",
+      "Tailwind"
+    ],
+    link: "https://mohdkamran-khan.github.io/Admin-Panel-Dashboard",
+    repo: "github.com/mohdkamran-khan/Admin-Panel-Dashboard",
+    details:
+      "Implemented using React for functionality and Tailwind for layout. Features responsive design and data visualization.",
+  },
+  {
     slug: "Ask-Your-PDF",
     title: "Ask Your PDF (React) - Google & Kaggle Capstone Project",
     description:
@@ -319,8 +335,8 @@ const education = [
     year: "Nov 2025",
   },
   {
-    title: "AI/ML Certification Course",
-    org: "Knowledge Gate",
+    title: "Cloud Computing Fundamentals",
+    org: "IBM SkillsBuild",
     year: "Dec 2025",
   },
   {
@@ -362,6 +378,11 @@ const education = [
     title: "React Hooks Crash Course",
     org: "Great Stack",
     year: "Oct 2025",
+  },
+  {
+    title: "DSA using Java",
+    org: "Knowledge Gate",
+    year: "Dec 2025",
   },
   {
     title: "Professional Diploma: Customer Centricity & Design Thinking",
