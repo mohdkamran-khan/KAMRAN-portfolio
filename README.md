@@ -1,3 +1,8 @@
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Build](https://img.shields.io/badge/Build-Passing-brightgreen)
+![Deployment](https://img.shields.io/badge/Deployed-GitHub%20Pages-orange)
+![License](https://img.shields.io/badge/License-MIT-blue)
+
 # KAMRAN Portfolio
 
 Welcome to my personal portfolio! This repository showcases my projects, skills, and experiences as a FullStack Developer.
