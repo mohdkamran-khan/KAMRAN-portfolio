@@ -128,6 +128,17 @@ const projects = [
     details:
       "Implemented using React for functionality and Tailwind for layout. Features responsive design & uses Fetch API & MongoDB for data management.",
   },
+   {
+    slug: "Twitter Clone-React",
+    title: "Twitter Clone (React)",
+    description:
+      "Fully functional Twitter frontend clone with post, like, trends, search & profile customization features.",
+    stack: ["React", "Vite", "JavaScript", "Tailwind"],
+    link: "#",
+    repo: "https://github.com/mohdkamran-khan/Twitter_Clone",
+    details:
+      "Twitter inspired React+Tailwind fully functional frontend clone.",
+  },
   {
     slug: "Portfolio-React",
     title: "Portfolio (React)",
@@ -304,12 +315,16 @@ const extracurricular = [
   {
     points: [
       "Participated in 5 day AI Agents Intensive Course by Google & Kaggle & built a Capstone Project 'Ask Your PDF' that uses AI to summarize PDF's & answer related questions.",
+      "Completed Advanced Software Engineering Job Simulation by Walmart & Forage.",
+      "Achieved Diamond League Badge on Google Cloud Skills.",
       "Participated in Google DevFest, Lucknow 2025.",
       "Participated in Google Cloud Skills Boost and achieved Level3: Gen AI Badge.",
-      "Achieved Diamond League Badge on Google Cloud Skills.",
+      "Participated in 1 day Practical Mixed Element Meshing for Real World Engineering Components by SKYYSKILL.",
+      "Participated in 1 day Data Leadership World Summit 1.0 by Microsoft & UP Power BI Club.",
       "Participated in Ethical Hacking Workshop by Skill Lab & AITD.",
       "Participated in Low-level Design Masterclass by Scaler Academy.",
       "Participated in Web Development Bootcamp with HTML CSS PHP MySQL Wordpress by Udemy",
+      "Participated in Fullstack Development Workshop by SkillEcted",
       "Student Council & Alumni Association — Managed projects, student relations, convocations and fests.",
       "NSS — Volunteered in community health and education programs.",
       "Participated in Inter Departmental University Sports Meet - Cricket & Volley Ball.",
@@ -513,7 +528,7 @@ export default function PortfolioSite() {
       className="min-h-screen bg-gradient-to-b from-slate-100 to-white text-slate-900 dark:from-slate-900 dark:to-slate-950 dark:text-slate-50 font-inter"
     >
       {/* Navbar */}
-      <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-200/60 dark:border-slate-800">
+      <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-300/70 dark:border-slate-800">
         <nav className="max-w-7xl mx-auto px-3 py-5 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer">
@@ -748,7 +763,7 @@ export default function PortfolioSite() {
       </section>
 
       {/* Separator */}
-      <div className="border-t border-slate-300 dark:border-slate-700 max-w-7xl mx-auto px-6 mt-12"></div>
+      <div className="border-t border-slate-400 dark:border-slate-700 max-w-7xl mx-auto px-6 mt-12"></div>
 
       {/* About */}
       <section
