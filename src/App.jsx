@@ -78,6 +78,22 @@ const projects = [
     details:
       "Implemented using MERN for functionality and React/Tailwind for layout. Features responsive design and local storage for event persistence.",
   },
+   {
+    slug: "Recipe Finder & Meal Planner-React",
+    title: "Recipe Finder & Meal Planner (React)",
+    description:
+      "Responsive Meal Planner webapp built with React, Vite & Spoonacular API. Features responsive design, search & favorite recipes & cuisines with a weekly meal planner.",
+    stack: [
+      "React",
+      "Vite",
+      "Spoonacular API",
+      "Tailwind"
+    ],
+    link: "https://recipe-finder-meal-planner-909wtvw7j-mohd-kamran-khans-projects.vercel.app/",
+    repo: "https://github.com/mohdkamran-khan/Recipe-Finder-Meal-Planner",
+    details:
+      "Implemented using React for functionality and Tailwind for layout. Features responsive design and search & favorites features.",
+  },
   {
     slug: "Admin Panel Dashboard-React",
     title: "Admin Panel Dashboard (React)",
@@ -317,6 +333,7 @@ const extracurricular = [
       "Participated in 5 day AI Agents Intensive Course by Google & Kaggle & built a Capstone Project 'Ask Your PDF' that uses AI to summarize PDF's & answer related questions.",
       "Completed Advanced Software Engineering Job Simulation by Walmart & Forage.",
       "Achieved Diamond League Badge on Google Cloud Skills.",
+      "Attended a Node.js Bootcamp & API Essentials Workshop by LetsUpgrade, NSDC, ITM Edutech & GDG Mumbai.",
       "Participated in Google DevFest, Lucknow 2025.",
       "Participated in Google Cloud Skills Boost and achieved Level3: Gen AI Badge.",
       "Participated in 1 day Practical Mixed Element Meshing for Real World Engineering Components by SKYYSKILL.",
