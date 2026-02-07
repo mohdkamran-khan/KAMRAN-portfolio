@@ -22,6 +22,7 @@ import {
   SiGithub,
   SiKaggle,
   SiLinkedin,
+  SiLinktree,
 } from "react-icons/si";
 import { GrAchievement } from "react-icons/gr";
 
@@ -77,6 +78,22 @@ const projects = [
     repo: "https://github.com/mohdkamran-khan/Mini-Event-Tracker",
     details:
       "Implemented using MERN for functionality and React/Tailwind for layout. Features responsive design and local storage for event persistence.",
+  },
+  {
+    slug: "News Aggregator-React",
+    title: "News Aggregator (React)",
+    description:
+      "A news web app built with React, Vite, Tailwind CSS, and Vercel Serverless Functions to fetch real-time news from NewsAPI. It delivers real-time headlines with a sleek UI, secure backend proxy, and optimized performance.",
+    stack: [
+      "React",
+      "Vite",
+      "NewsAPI",
+      "Tailwind"
+    ],
+    link: "https://news-aggregator-pi-pearl.vercel.app/",
+    repo: "https://github.com/mohdkamran-khan/News-Aggregator",
+    details:
+      "Implemented using React for functionality and Tailwind for layout. Features responsive design and search & bookmark features.",
   },
    {
     slug: "Recipe Finder & Meal Planner-React",
@@ -1075,14 +1092,14 @@ export default function PortfolioSite() {
         <div className="border-t border-slate-300 dark:border-slate-700"></div>
       </div>
       {/* Footer */}
-      <footer className="py-6 text-center text-sm text-slate-500 cursor-context-menu">
+      <footer className="py-6 text-center text-sm text-slate-600 cursor-context-menu dark:text-slate-400">
         <div className="flex flex-wrap items-center justify-center gap-3 mb-3">
           <a
             href="https://github.com/mohdkamran-khan"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"
-            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900 dark:text-slate-300"
           >
             <SiGithub className="h-4 w-4" /> GitHub
           </a>
@@ -1091,16 +1108,16 @@ export default function PortfolioSite() {
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
-            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900 dark:text-slate-300"
           >
             <SiLinkedin className="h-4 w-4" /> LinkedIn
           </a>
           <a
-            href="https://discordapp.com/users/1438054169339760721"
+            href="https://discord.gg/27xRAdJk"
             target="_blank"
             rel="noreferrer"
             aria-label="Discord"
-            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900 dark:text-slate-300"
           >
             <SiDiscord className="h-4 w-4" /> Discord
           </a>
@@ -1109,7 +1126,7 @@ export default function PortfolioSite() {
             target="_blank"
             rel="noreferrer"
             aria-label="Kaggle"
-            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900 dark:text-slate-300"
           >
             <SiKaggle className="h-4 w-4" /> Kaggle
           </a>
@@ -1118,7 +1135,7 @@ export default function PortfolioSite() {
             target="_blank"
             rel="noreferrer"
             aria-label="Credly"
-            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900 dark:text-slate-300"
           >
             <SiCredly className="h-4 w-4" /> Credly
           </a>
@@ -1127,7 +1144,7 @@ export default function PortfolioSite() {
             target="_blank"
             rel="noreferrer"
             aria-label="Commudle"
-            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900 dark:text-slate-300"
           >
             <img
               src="commudle-logo.png"
@@ -1135,6 +1152,15 @@ export default function PortfolioSite() {
               className="h-4 w-4 object-contain"
             />
             Commudle
+          </a>
+          <a
+            href="https://linktr.ee/mohdkamrankhan"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Linktree"
+            className="inline-flex items-center gap-2 px-3 py-2 border rounded-lg hover:scale-105 hover:shadow-xl hover:bg-slate-50 dark:hover:bg-slate-900 dark:text-slate-300"
+          >
+            <SiLinktree className="h-4 w-4" /> Linktree
           </a>
         </div>
         <br />© {new Date().getFullYear()} | Mohd Kamran Khan
