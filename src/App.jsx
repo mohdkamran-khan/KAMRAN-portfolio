@@ -84,44 +84,40 @@ const projects = [
     title: "News Aggregator (React)",
     description:
       "A news web app built with React, Vite, Tailwind CSS, and Vercel Serverless Functions to fetch real-time news from NewsAPI. It delivers real-time headlines with a sleek UI, secure backend proxy, and optimized performance.",
-    stack: [
-      "React",
-      "Vite",
-      "NewsAPI",
-      "Tailwind"
-    ],
+    stack: ["React", "Vite", "NewsAPI", "Tailwind"],
     link: "https://news-aggregator-pi-pearl.vercel.app/",
     repo: "https://github.com/mohdkamran-khan/News-Aggregator",
     details:
       "Implemented using React for functionality and Tailwind for layout. Features responsive design and search & bookmark features.",
   },
-   {
+  {
     slug: "Recipe Finder & Meal Planner-React",
     title: "Recipe Finder & Meal Planner (React)",
     description:
       "Responsive Meal Planner webapp built with React, Vite & Spoonacular API. Features responsive design, search & favorite recipes & cuisines with a weekly meal planner.",
-    stack: [
-      "React",
-      "Vite",
-      "Spoonacular API",
-      "Tailwind"
-    ],
+    stack: ["React", "Vite", "Spoonacular API", "Tailwind"],
     link: "https://recipe-finder-meal-planner-909wtvw7j-mohd-kamran-khans-projects.vercel.app/",
     repo: "https://github.com/mohdkamran-khan/Recipe-Finder-Meal-Planner",
     details:
       "Implemented using React for functionality and Tailwind for layout. Features responsive design and search & favorites features.",
   },
   {
+    slug: "Expense Tracker-React",
+    title: "Expense Tracker (React)",
+    description:
+      "An Expense Tracker built with React, Vite, Tailwind CSS & Recharts with features like dark/light mode, search & category filters, analytics charts, and local storage persistence.",
+    stack: ["React", "Vite", "Recharts", "Tailwind"],
+    link: "https://mohdkamran-khan.github.io/Expense-Tracker/",
+    repo: "https://github.com/mohdkamran-khan/Expense-Tracker",
+    details:
+      "Implemented using React for functionality and Tailwind for layout. Features responsive design and data visualization.",
+  },
+  {
     slug: "Admin Panel Dashboard-React",
     title: "Admin Panel Dashboard (React)",
     description:
       "Responsive Admin Dashboard built with React, Vite & Recharts. Features responsive design, data visualization graphs, top products & theme support.",
-    stack: [
-      "React",
-      "Vite",
-      "Recharts",
-      "Tailwind"
-    ],
+    stack: ["React", "Vite", "Recharts", "Tailwind"],
     link: "https://mohdkamran-khan.github.io/Admin-Panel-Dashboard",
     repo: "github.com/mohdkamran-khan/Admin-Panel-Dashboard",
     details:
@@ -132,13 +128,7 @@ const projects = [
     title: "Ask Your PDF (React) - Google & Kaggle Capstone Project",
     description:
       "Clean & responsive webpage built with React.js where you can upload any PDF and ask AI to summarize & ask related questions.",
-    stack: [
-      "React",
-      "Node",
-      "Express",
-      "Tailwind",
-      "Multer",
-    ],
+    stack: ["React", "Node", "Express", "Tailwind", "Multer"],
     link: "#",
     repo: "https://github.com/mohdkamran-khan/AskYourPDF",
     details:
@@ -149,19 +139,13 @@ const projects = [
     title: "Gemini-Chat (MERN)",
     description:
       "An AI powered chat application built using Google Gemini's API with MERN Stack. The app allows users to interact with Gemini models in real time with conversation history management.",
-    stack: [
-      "React",
-      "Node",
-      "Express",
-      "MongoDB",
-      "Tailwind",
-    ],
+    stack: ["React", "Node", "Express", "MongoDB", "Tailwind"],
     link: "#",
     repo: "https://github.com/mohdkamran-khan/Gemini-Chat",
     details:
       "Implemented using React for functionality and Tailwind for layout. Features responsive design & uses Fetch API & MongoDB for data management.",
   },
-   {
+  {
     slug: "Twitter Clone-React",
     title: "Twitter Clone (React)",
     description:
@@ -169,21 +153,14 @@ const projects = [
     stack: ["React", "Vite", "JavaScript", "Tailwind"],
     link: "#",
     repo: "https://github.com/mohdkamran-khan/Twitter_Clone",
-    details:
-      "Twitter inspired React+Tailwind fully functional frontend clone.",
+    details: "Twitter inspired React+Tailwind fully functional frontend clone.",
   },
   {
     slug: "Portfolio-React",
     title: "Portfolio (React)",
     description:
       "Simple & responsive portfolio built with React.js to represent my skills & achievements.",
-    stack: [
-      "React",
-      "Node",
-      "Tailwind",
-      "Framer Motion",
-      "Form Submit"
-    ],
+    stack: ["React", "Node", "Tailwind", "Framer Motion", "Form Submit"],
     link: "https://mohdkamran-khan.github.io/KAMRAN-portfolio/",
     repo: "https://github.com/mohdkamran-khan/KAMRAN-portfolio",
     details:
@@ -208,8 +185,7 @@ const projects = [
     stack: ["Node.js", "HTML", "EJS", "Tailwind", "MongoDB"],
     link: "#",
     repo: "https://github.com/mohdkamran-khan/Airbnb-Clone",
-    details:
-      "Clone of Airbnb rendered completely from backend using Node.js",
+    details: "Clone of Airbnb rendered completely from backend using Node.js",
   },
   {
     slug: "airbnb-frontend",
@@ -219,8 +195,7 @@ const projects = [
     stack: ["React.js", "HTML", "JS", "Vite", "Tailwind"],
     link: "https://mohdkamran-khan.github.io/Airbnb-Frontend/",
     repo: "https://github.com/mohdkamran-khan/Airbnb-Frontend",
-    details:
-      "Clone of Airbnb frontend built using React.js & Tailwind.",
+    details: "Clone of Airbnb frontend built using React.js & Tailwind.",
   },
   {
     slug: "hotstar-clone",
