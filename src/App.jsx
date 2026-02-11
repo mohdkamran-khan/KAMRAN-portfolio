@@ -298,6 +298,16 @@ const skills = [
 
 const experiences = [
   {
+    role: "Web Developer — Intern",
+    company: "Syntecxhub",
+    period: "Feb 2026 – Mar 2026",
+    points: [
+      "Developed a practical understanding of modern web development workflows, tools, and industry practices.",
+      "Enhanced problem solving, debugging, and performance optimization skills by working on real world challenges.",
+      "Applied professional coding standards and software development lifecycle principles while effectively managing project requirements and deadlines.",
+    ],
+  },
+  {
     role: "Frontend Developer (React) — Intern",
     company: "Skillfied Mentor",
     period: "Dec 2025 – Mar 2026",
