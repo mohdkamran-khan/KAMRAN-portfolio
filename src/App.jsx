@@ -793,17 +793,15 @@ export default function PortfolioSite() {
           <Code2 className="h-6 w-6" /> About Me
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300">
-          I am a <b>Full Stack Developer</b> specializing in end-to-end{" "}
+          I am a <b>Full Stack Developer</b> specializing in{" "}
           <b>Web Development</b> with the <b>MERN</b> stack, focused on building
           scalable, secure, and performance optimized applications. Experienced
-          in designing <b>RESTful APIs</b> with <b>JWT</b> authentication and
-          integrating <b>Cloud</b> services for
-          production environments. <br /> <br />I am proficient in{" "}
-          <b>AWS, Azure</b> and <b>CI/CD</b> pipelines to ensure reliable and
-          efficient deployments. With a strong foundation in <b>Java, Maven</b>{" "}
-          and <b>SQL,</b> I deliver enterprise grade solutions while
-          incorporating <b>AI</b> and <b>Cybersecurity</b> principles to develop
-          intelligent, future ready applications.
+          in designing <b>RESTful APIs,</b> implementing robust authentication
+          and deploying applications using modern cloud infrastructure and{" "}
+          <b>CI/CD</b> pipelines. <br />
+          <br /> With a strong foundation in <b>Java, Maven</b> and <b>SQL,</b>{" "}
+          I prioritize clean architecture to enhance development efficiency and
+          user experience.
         </p>
       </section>
 
