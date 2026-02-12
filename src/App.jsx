@@ -793,21 +793,17 @@ export default function PortfolioSite() {
           <Code2 className="h-6 w-6" /> About Me
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300">
-          I specialize in end-to-end <b>Web Development</b> using <b>MERN</b>{" "}
-          stack, with a strong focus on building scalable, responsive and secure
-          solutions. I design and implement <b>REST APIs</b> with <b>JWT</b>{" "}
-          authentication to ensure robust access control, and have hands-on
-          experience in integrating <b>Stripe</b>, <b>Razorpay</b>, and{" "}
-          <b>Cloudinary</b> for real-world features of payments and media
-          management. <br /> <br />I am skilled in deploying applications using{" "}
-          <b>AWS</b>, <b>Docker</b>, and modern <b>CI/CD</b> pipelines, ensuring
-          reliability and efficiency. Alongside web development, I bring a
-          strong foundation in <b>Java</b>, <b>SQL</b>, and <b>Maven</b>
-          , enabling me to confidently deliver enterprise-level projects. <br />{" "}
-          <br />I also work with <b>Blockchain</b> and <b>Web3</b> integrations,
-          and leverage <b>AI/ML, LLMs, Cybersecurity</b> and{" "}
-          <b>Prompt Engineering</b> to build smarter and more adaptive
-          application features.
+          I am a <b>Full Stack Developer</b> specializing in end-to-end{" "}
+          <b>Web Development</b> with the <b>MERN</b> stack, focused on building
+          scalable, secure, and performance optimized applications. Experienced
+          in designing <b>RESTful APIs</b> with <b>JWT</b> authentication and
+          integrating <b>Cloud</b> services for
+          production environments. <br /> <br />I am proficient in{" "}
+          <b>AWS, Azure</b> and <b>CI/CD</b> pipelines to ensure reliable and
+          efficient deployments. With a strong foundation in <b>Java, Maven</b>{" "}
+          and <b>SQL,</b> I deliver enterprise grade solutions while
+          incorporating <b>AI</b> and <b>Cybersecurity</b> principles to develop
+          intelligent, future ready applications.
         </p>
       </section>
 
