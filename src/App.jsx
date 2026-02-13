@@ -33,7 +33,7 @@ const projects = [
     slug: "lms-mern",
     title: "Learning Management System (MERN)",
     description:
-      "Full-featured LMS with authentication, role-based access, course pages, course search and progress tracking.",
+      "Built a LMS with JWT authentication, role-based access, progress tracking and optimized MongoDB queries, improving API response performance by 30%. Integrated Cloudinary for media uploads and Stripe for payments, supporting 100+ users.",
     stack: [
       "MongoDB",
       "Express",
@@ -50,21 +50,10 @@ const projects = [
       "Developed during internship. Optimized DB queries, implemented REST APIs, and integrated role-based access.",
   },
   {
-    slug: "ebook-maven",
-    title: "eBook Management App (Maven)",
-    description:
-      "JSP/Servlet + MySQL app for catalog & user management, role-based access, upload/buy/sell/search books. Deployed on Apache Tomcat.",
-    stack: ["JSP", "Servlet", "MySQL", "Maven", "Tomcat"],
-    link: "#",
-    repo: "https://github.com/mohdkamran-khan/Ebook",
-    details:
-      "Implemented using Java backend and JSP for views. Managed catalog and authentication with MySQL.",
-  },
-  {
     slug: "Event-Tracker-MERN",
     title: "Event Tracker (MERN)",
     description:
-      "Clean & Responsive event tracker built with MERN Stack. CRUD functionality and search features.",
+      "Simple event tracker built with MERN Stack. Features CRUD functionality & dynamic search.",
     stack: [
       "MongoDB",
       "Express",
@@ -80,10 +69,21 @@ const projects = [
       "Implemented using MERN for functionality and React/Tailwind for layout. Features responsive design and local storage for event persistence.",
   },
   {
+    slug: "ebook-maven",
+    title: "eBook Management App (Maven)",
+    description:
+      "JSP/Servlet + MySQL app for catalog & user management, role-based access, upload/buy/sell/search books. Deployed on Apache Tomcat Server.",
+    stack: ["JSP", "Servlet", "MySQL", "Maven", "Tomcat"],
+    link: "#",
+    repo: "https://github.com/mohdkamran-khan/Ebook",
+    details:
+      "Implemented using Java backend and JSP for views. Managed catalog and authentication with MySQL.",
+  },
+  {
     slug: "News Aggregator-React",
     title: "News Aggregator (React)",
     description:
-      "A news web app built with React, Vite, Tailwind CSS, and Vercel Serverless Functions to fetch real-time news from NewsAPI. It delivers real-time headlines with a sleek UI, secure backend proxy, and optimized performance.",
+      "A news web app built with React, Vite and Vercel Serverless Functions to fetch real-time news from NewsAPI. It delivers headlines with a sleek UI, secure backend proxy, and optimized performance.",
     stack: ["React", "Vite", "NewsAPI", "Tailwind"],
     link: "https://news-aggregator-pi-pearl.vercel.app/",
     repo: "https://github.com/mohdkamran-khan/News-Aggregator",
@@ -94,7 +94,7 @@ const projects = [
     slug: "Recipe Finder & Meal Planner-React",
     title: "Recipe Finder & Meal Planner (React)",
     description:
-      "Responsive Meal Planner webapp built with React, Vite & Spoonacular API. Features responsive design, search & favorite recipes & cuisines with a weekly meal planner.",
+      "A responsive Meal Planner webapp built with React & Spoonacular API. Features search, favorites persistence & a weekly meal planner.",
     stack: ["React", "Vite", "Spoonacular API", "Tailwind"],
     link: "https://recipe-finder-meal-planner-909wtvw7j-mohd-kamran-khans-projects.vercel.app/",
     repo: "https://github.com/mohdkamran-khan/Recipe-Finder-Meal-Planner",
@@ -105,7 +105,7 @@ const projects = [
     slug: "Expense Tracker-React",
     title: "Expense Tracker (React)",
     description:
-      "An Expense Tracker built with React, Vite, Tailwind CSS & Recharts with features like dark/light mode, search & category filters, analytics charts, and local storage persistence.",
+      "An Expense Tracker built with React & Recharts with features like dark/light mode, search & category filters, analytics charts, and local storage persistence.",
     stack: ["React", "Vite", "Recharts", "Tailwind"],
     link: "https://mohdkamran-khan.github.io/Expense-Tracker/",
     repo: "https://github.com/mohdkamran-khan/Expense-Tracker",
@@ -113,21 +113,10 @@ const projects = [
       "Implemented using React for functionality and Tailwind for layout. Features responsive design and data visualization.",
   },
   {
-    slug: "Admin Panel Dashboard-React",
-    title: "Admin Panel Dashboard (React)",
-    description:
-      "Responsive Admin Dashboard built with React, Vite & Recharts. Features responsive design, data visualization graphs, top products & theme support.",
-    stack: ["React", "Vite", "Recharts", "Tailwind"],
-    link: "https://mohdkamran-khan.github.io/Admin-Panel-Dashboard",
-    repo: "github.com/mohdkamran-khan/Admin-Panel-Dashboard",
-    details:
-      "Implemented using React for functionality and Tailwind for layout. Features responsive design and data visualization.",
-  },
-  {
     slug: "Ask-Your-PDF",
     title: "Ask Your PDF (React) - Google & Kaggle Capstone Project",
     description:
-      "Clean & responsive webpage built with React.js where you can upload any PDF and ask AI to summarize & ask related questions.",
+      "Built an AI powered document analysis webapp that parses uploaded PDFs, extracts textual data, and enables contextual question answering.",
     stack: ["React", "Node", "Express", "Tailwind", "Multer"],
     link: "#",
     repo: "https://github.com/mohdkamran-khan/AskYourPDF",
@@ -138,44 +127,12 @@ const projects = [
     slug: "Gemini-Chat",
     title: "Gemini-Chat (MERN)",
     description:
-      "An AI powered chat application built using Google Gemini's API with MERN Stack. The app allows users to interact with Gemini models in real time with conversation history management.",
+      "Built a real-time AI chat platform using the MERN stack and Google Gemini API with persistent conversation storage and efficient request handling.",
     stack: ["React", "Node", "Express", "MongoDB", "Tailwind"],
     link: "#",
     repo: "https://github.com/mohdkamran-khan/Gemini-Chat",
     details:
       "Implemented using React for functionality and Tailwind for layout. Features responsive design & uses Fetch API & MongoDB for data management.",
-  },
-  {
-    slug: "Twitter Clone-React",
-    title: "Twitter Clone (React)",
-    description:
-      "Fully functional Twitter frontend clone with post, like, trends, search & profile customization features.",
-    stack: ["React", "Vite", "JavaScript", "Tailwind"],
-    link: "#",
-    repo: "https://github.com/mohdkamran-khan/Twitter_Clone",
-    details: "Twitter inspired React+Tailwind fully functional frontend clone.",
-  },
-  {
-    slug: "Portfolio-React",
-    title: "Portfolio (React)",
-    description:
-      "Simple & responsive portfolio built with React.js to represent my skills & achievements.",
-    stack: ["React", "Node", "Tailwind", "Framer Motion", "Form Submit"],
-    link: "https://mohdkamran-khan.github.io/KAMRAN-portfolio/",
-    repo: "https://github.com/mohdkamran-khan/KAMRAN-portfolio",
-    details:
-      "Implemented using React for functionality and Tailwind for layout. Features responsive design & contact form.",
-  },
-  {
-    slug: "Rock-Paper-Scissors-JS",
-    title: "Rock Paper Scissors Game (JS)",
-    description:
-      "A simple Rock Paper Scissors game implemented in JavaScript with score tracking.",
-    stack: ["JavaScript", "HTML", "CSS"],
-    link: "#",
-    repo: "https://github.com/mohdkamran-khan/RockPaperScissorsGame",
-    details:
-      "Implemented using JavaScript for game logic and HTML/CSS for layout. Features score tracking and responsive design.",
   },
   {
     slug: "airbnb-clone",
@@ -191,62 +148,11 @@ const projects = [
     slug: "airbnb-frontend",
     title: "Airbnb Frontend Clone (React.js)",
     description:
-      "An Airbnb inspired fully responsive frontend clone built in React.js, Vite & Tailwind .",
+      "An Airbnb inspired frontend clone built in React.js with media management & responsive design.",
     stack: ["React.js", "HTML", "JS", "Vite", "Tailwind"],
     link: "https://mohdkamran-khan.github.io/Airbnb-Frontend/",
     repo: "https://github.com/mohdkamran-khan/Airbnb-Frontend",
     details: "Clone of Airbnb frontend built using React.js & Tailwind.",
-  },
-  {
-    slug: "hotstar-clone",
-    title: "Disney+ Hotstar Clone (React)",
-    description: "Responsive UI with reusable components. Hosted on Netlify.",
-    stack: ["React", "Netlify"],
-    link: "https://hotstarclonekamran.netlify.app/",
-    repo: "https://github.com/mohdkamran-khan/HotStar-Clones",
-    details: "Created a streaming app clone with a polished UI/UX.",
-  },
-  {
-    slug: "myntra-clone",
-    title: "Myntra Clone (JS)",
-    description: "Responsive UI with product details and checkout feature.",
-    stack: ["JavaScript", "HTML", "CSS"],
-    link: "#",
-    repo: "https://github.com/mohdkamran-khan/Myntra_Clone",
-    details: "Created a shopping app clone with a polished UI/UX.",
-  },
-  {
-    slug: "QR-Code-Generator-JS",
-    title: "QR Code Generator (JS)",
-    description:
-      "A simple and responsive web application that allows you to generate QR codes for any URL or text, and optionally embed a custom logo inside the QR code.",
-    stack: ["JavaScript", "HTML", "CSS"],
-    link: "#",
-    repo: "https://github.com/mohdkamran-khan/QR-Code-Generator",
-    details:
-      "Implemented using JavaScript for functionality and HTML/CSS for layout.",
-  },
-  {
-    slug: "To-Do List-JS",
-    title: "To-Do List App (JS)",
-    description:
-      "A simple To-Do List app implemented in JavaScript with local storage for task persistence.",
-    stack: ["JavaScript", "HTML", "CSS"],
-    link: "#",
-    repo: "https://github.com/mohdkamran-khan/Todo-List",
-    details:
-      "Implemented using JavaScript for functionality and HTML/CSS for layout. Features local storage for task persistence.",
-  },
-  {
-    slug: "Calculator-JS",
-    title: "Calculator (JS)",
-    description:
-      "A simple, elegant Calculator perfect for basic arithmetic with a clean UI.",
-    stack: ["JavaScript", "HTML", "CSS"],
-    link: "#",
-    repo: "https://github.com/mohdkamran-khan/Calculator",
-    details:
-      "Implemented using JavaScript for functionality and HTML/CSS for layout.",
   },
 ];
 
@@ -269,21 +175,17 @@ const skills = [
       "Tailwind",
       "Bootstrap",
       "ShadCN",
-      "Machine Learning",
-      "LLM",
     ],
   },
   {
     group: "Databases",
-    items: ["MongoDB", "AWS", "Azure", "MySQL", "PHP", "GraphQL", "Oracle", "RDBMS"],
+    items: ["MongoDB", "AWS", "Azure", "MySQL", "Oracle", "RDBMS"],
   },
   {
     group: "Tools & Utilities",
     items: [
       "Git",
-      "Cursor",
       "Amazon Q Developer",
-      "Blockchain Development",
       "Prompt Engineering",
       "Cybersecurity",
       "Stripe",
@@ -291,7 +193,6 @@ const skills = [
       "Framer Motion",
       "Form Submit",
       "SendGrid",
-      "Low-Level Design",
     ],
   },
 ];
@@ -300,7 +201,7 @@ const experiences = [
   {
     role: "Web Developer — Intern",
     company: "Syntecxhub",
-    period: "Feb 2026 – Mar 2026",
+    period: "Feb 2026 – Present",
     points: [
       "Developed a practical understanding of modern web development workflows, tools, and industry practices.",
       "Enhanced problem solving, debugging, and performance optimization skills by working on real world challenges.",
@@ -310,7 +211,7 @@ const experiences = [
   {
     role: "Frontend Developer (React) — Intern",
     company: "Skillfied Mentor",
-    period: "Dec 2025 – Mar 2026",
+    period: "Dec 2025 – Present",
     points: [
       "Strengthening my React skill.",
       "Gaining hands-on experience and contributing to real world projects.",
@@ -332,22 +233,13 @@ const experiences = [
 const extracurricular = [
   {
     points: [
-      "Participated in 5 day AI Agents Intensive Course by Google & Kaggle & built a Capstone Project 'Ask Your PDF' that uses AI to summarize PDF's & answer related questions.",
-      "Completed Advanced Software Engineering Job Simulation by Walmart & Forage.",
-      "Achieved Diamond League Badge on Google Cloud Skills.",
-      "Attended a Node.js Bootcamp & API Essentials Workshop by LetsUpgrade, NSDC, ITM Edutech & GDG Mumbai.",
+      "Built 'Ask Your PDF', an AI-powered Capstone project during the Google & Kaggle AI Agents program.",
+      "Completed Advanced Software Engineering Simulation by Walmart (Forage).",
+      "Earned Diamond League status on Google Cloud Skills Boost with Level3 : GenAI Badge.",
       "Participated in Google DevFest, Lucknow 2025.",
-      "Participated in Google Cloud Skills Boost and achieved Level3: Gen AI Badge.",
-      "Participated in 1 day Practical Mixed Element Meshing for Real World Engineering Components by SKYYSKILL.",
-      "Participated in 1 day Data Leadership World Summit 1.0 by Microsoft & UP Power BI Club.",
-      "Participated in Ethical Hacking Workshop by Skill Lab & AITD.",
-      "Participated in Low-level Design Masterclass by Scaler Academy.",
-      "Participated in Web Development Bootcamp with HTML CSS PHP MySQL Wordpress by Udemy",
-      "Participated in Fullstack Development Workshop by SkillEcted",
-      "Student Council & Alumni Association — Managed projects, student relations, convocations and fests.",
-      "NSS — Volunteered in community health and education programs.",
-      "Participated in Inter Departmental University Sports Meet - Cricket & Volley Ball.",
-      "5+ ★ & 2 achievement badges on GitHub.",
+      "Member of University Student Council & Alumni Association — Managed projects, student relations, convocations & fests.",
+      "Volunteered in NSS contributing to community health and education programs.",
+      "Competed in Inter Departmental University Sports Meet - Cricket & Volley Ball.",
     ],
   },
 ];
@@ -371,56 +263,6 @@ const education = [
   {
     title: "Cloud Computing Fundamentals",
     org: "IBM SkillsBuild",
-    year: "Dec 2025",
-  },
-  {
-    title: "Introduction to Prompt Engineering with GitHub Copilot",
-    org: "Microsoft & SkillUP",
-    year: "Nov 2025",
-  },
-  {
-    title: "Fundamentals of LLM",
-    org: "Hugging Face Instructors",
-    year: "Nov 2025",
-  },
-  {
-    title: "Amazon Q Developer",
-    org: "AWS Training & Certification",
-    year: "Nov 2025",
-  },
-  {
-    title: "Blockchain Developer Training",
-    org: "Simplilearn & SkillUP",
-    year: "Nov 2025",
-  },
-  {
-    title: "Cybersecurity Fundamentals ",
-    org: "IBM",
-    year: "Nov 2025",
-  },
-  {
-    title: "Introduction to Machine Learning",
-    org: "Kaggle",
-    year: "Nov 2025",
-  },
-  {
-    title: "JavaScript Certification Course",
-    org: "Knowledge Gate",
-    year: "June 2025",
-  },
-  {
-    title: "React Hooks Crash Course",
-    org: "Great Stack",
-    year: "Oct 2025",
-  },
-  {
-    title: "DSA using Java",
-    org: "Knowledge Gate",
-    year: "Dec 2025",
-  },
-  {
-    title: "Professional Diploma: Customer Centricity & Design Thinking",
-    org: "Udemy",
     year: "Dec 2025",
   },
   {
@@ -541,6 +383,10 @@ export default function PortfolioSite() {
     }
   }, [formSuccess]);
 
+  //GithubStats
+  const githubTheme = darkMode ? "dark" : "default";
+  const chartColor = darkMode ? "196C2E" : "033A16";
+
   return (
     <div
       id="top"
@@ -548,7 +394,7 @@ export default function PortfolioSite() {
     >
       {/* Navbar */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-300/70 dark:border-slate-800">
-        <nav className="max-w-7xl mx-auto px-3 py-5 flex items-center justify-between">
+        <nav className="max-w-8xl mx-auto px-10 py-5 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer">
             <Code2 className="h-6 w-6" />
@@ -573,6 +419,12 @@ export default function PortfolioSite() {
               className="hover:underline flex items-center gap-1"
             >
               <FolderKanban className="h-4 w-4" /> Projects
+            </a>
+            <a
+              href="#github"
+              className="hover:underline flex items-center gap-1"
+            >
+              <SiGithub className="h-4 w-4" /> Github
             </a>
             <a
               href="#skills"
@@ -679,8 +531,8 @@ export default function PortfolioSite() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.25, ease: "easeInOut" }}
               className="lg:hidden px-4 pb-4 flex flex-col gap-4 
-                 bg-white/50 dark:bg-slate-900/50 
-                 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 rounded-b-xl items-center"
+                bg-white/50 dark:bg-slate-900/50 
+                backdrop-blur-md border-t border-slate-200 dark:border-slate-800 rounded-b-xl items-center"
             >
               <a
                 href="#about"
@@ -693,6 +545,12 @@ export default function PortfolioSite() {
                 className="hover:underline flex items-center gap-1"
               >
                 <FolderKanban className="h-4 w-4" /> Projects
+              </a>
+              <a
+                href="#github"
+                className="hover:underline flex items-center gap-1"
+              >
+                <SiGithub className="h-4 w-4" /> Github
               </a>
               <a
                 href="#skills"
@@ -733,12 +591,11 @@ export default function PortfolioSite() {
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
             Mohd Kamran Khan
           </h1>
-          <p className="mt-3 text-lg md:text-xl text-slate-600 dark:text-slate-300 cursor-context-menu">
-            Full-Stack Developer • MERN & Java • Building clean, scalable web
-            apps
+          <p className="mt-3 text-lg md:text-xl text-slate-600 dark:text-slate-300">
+            Full-Stack Developer • MERN & Java • Building secure, high-performance systems
           </p>
           <div className="flex flex-wrap items-center gap-3 text-base text-slate-600 dark:text-slate-300 mt-4">
-            <span className="inline-flex items-center gap-1 cursor-context-menu">
+            <span className="inline-flex items-center gap-1">
               <MapPin className="h-5 w-5" /> Lucknow, UP &nbsp;|
             </span>
             <a
@@ -789,7 +646,7 @@ export default function PortfolioSite() {
         id="about"
         className="max-w-7xl mx-auto -mb-10 px-6 md:px-12 py-10"
       >
-        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 cursor-context-menu underline">
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 underline">
           <Code2 className="h-6 w-6" /> About Me
         </h2>
         <p className="text-lg text-slate-600 dark:text-slate-300">
@@ -808,8 +665,8 @@ export default function PortfolioSite() {
       {/* Projects */}
       <section id="projects" className="max-w-7xl mx-auto px-6 md:px-12 py-12">
         <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-semibold flex items-center cursor-context-menu gap-2 underline">
-            <FolderKanban className="h-6 w-6" /> Projects
+          <h2 className="text-2xl font-semibold flex items-center gap-2 underline">
+            <FolderKanban className="h-6 w-6" /> Featured Projects
           </h2>
           <a
             href="https://github.com/mohdkamran-khan"
@@ -872,10 +729,51 @@ export default function PortfolioSite() {
         </div>
       </section>
 
+      {/* Github */}
+      <section id="github" className="max-w-7xl mx-auto px-6 md:px-10 mb-12">
+        <h2 className="text-2xl font-semibold flex items-center gap-2 mb-8 underline">
+          <SiGithub className="h-6 w-6" /> GitHub Overview
+        </h2>
+        <div className="p-6 rounded-2xl border border-slate-300 shadow-2xl">
+          {/* Stats + Languages */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+            <div className="text-center">
+              <p className="text-lg font-semibold mb-4">Stats</p>
+              <img
+                className="w-full max-w-md"
+                src={`https://github-stats-kamran.vercel.app/api?username=mohdkamran-khan&show_icons=true&theme=${githubTheme}&hide_border=true&v=${darkMode}&cache_seconds=86400&include_all_commits=true&hide_rank=true`}
+                alt="GitHub Stats"
+              />
+            </div>
+
+            <div className="text-center">
+              <p className="text-lg font-semibold mb-4">Top Languages</p>
+              <img
+                className="w-full max-w-md"
+                src={`https://github-stats-kamran.vercel.app/api/top-langs/?username=mohdkamran-khan&layout=compact&theme=${githubTheme}&hide_border=true&v=${darkMode}&cache_seconds=86400`}
+                alt="Top Languages"
+              />
+            </div>
+          </div>
+
+          {/* Contribution Graph */}
+          <div className="mt-12 text-center">
+            <p className="text-lg font-semibold mb-4">Contribution Activity</p>
+
+            <img
+              className="w-full max-w-4xl mx-auto"
+              src={`https://ghchart.rshah.org/${chartColor}/mohdkamran-khan?v=${darkMode}`}
+              alt="GitHub Contribution Chart"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Skills */}
       <section id="skills" className="max-w-7xl mx-auto px-6 md:px-12">
-        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 cursor-context-menu underline">
-          <Wrench className="h-6 w-6" /> Skills
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 underline">
+          <Wrench className="h-6 w-6" />
+          Skills
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           {skills.map((group) => (
@@ -904,8 +802,9 @@ export default function PortfolioSite() {
         id="experience"
         className="max-w-7xl mx-auto px-6 md:px-12 py-12"
       >
-        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 cursor-context-menu underline">
-          <Briefcase className="h-6 w-6" /> Experience
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 underline">
+          <Briefcase className="h-6 w-6" />
+          Experience
         </h2>
         <div className="grid gap-6">
           {experiences.map((exp, i) => (
@@ -932,8 +831,9 @@ export default function PortfolioSite() {
 
       {/* Education */}
       <section id="education" className="max-w-7xl mx-auto px-6 md:px-12">
-        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 cursor-context-menu underline">
-          <GraduationCap className="h-6 w-6" /> Education
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 underline">
+          <GraduationCap className="h-6 w-6" />
+          Education
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           {education.map((ed, idx) => (
@@ -956,8 +856,8 @@ export default function PortfolioSite() {
         id="extracurricular"
         className="max-w-7xl mx-auto px-6 md:px-12 mt-12"
       >
-        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 cursor-context-menu underline">
-          <GrAchievement className="h-6 w-6" /> Extracurricular & Achievements
+        <h2 className="text-2xl font-semibold mb-6 flex items-center gap-2 underline">
+          <GrAchievement className="h-6 w-6" /> Achievements & Leadership
         </h2>
         <div className="grid gap-6">
           {extracurricular.map((ext, i) => (
@@ -978,7 +878,7 @@ export default function PortfolioSite() {
       {/* Contact */}
       <section id="contact" className="max-w-7xl mx-auto px-6 md:px-12 py-14">
         <div className="rounded-2xl border p-8 bg-white dark:bg-slate-800 shadow-lg">
-          <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2 cursor-context-menu">
+          <h2 className="text-2xl font-semibold mb-4 flex items-center gap-2">
             <Send className="h-6 w-6" /> Let’s connect to build something great!
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
