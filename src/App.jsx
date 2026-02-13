@@ -394,7 +394,7 @@ export default function PortfolioSite() {
     >
       {/* Navbar */}
       <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 dark:supports-[backdrop-filter]:bg-slate-900/60 border-b border-slate-300/70 dark:border-slate-800">
-        <nav className="max-w-8xl mx-auto px-10 py-5 flex items-center justify-between">
+        <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer">
             <Code2 className="h-6 w-6" />
@@ -419,12 +419,6 @@ export default function PortfolioSite() {
               className="hover:underline flex items-center gap-1"
             >
               <FolderKanban className="h-4 w-4" /> Projects
-            </a>
-            <a
-              href="#github"
-              className="hover:underline flex items-center gap-1"
-            >
-              <SiGithub className="h-4 w-4" /> Github
             </a>
             <a
               href="#skills"
@@ -547,12 +541,6 @@ export default function PortfolioSite() {
                 <FolderKanban className="h-4 w-4" /> Projects
               </a>
               <a
-                href="#github"
-                className="hover:underline flex items-center gap-1"
-              >
-                <SiGithub className="h-4 w-4" /> Github
-              </a>
-              <a
                 href="#skills"
                 className="hover:underline flex items-center gap-1"
               >
@@ -592,7 +580,11 @@ export default function PortfolioSite() {
             Mohd Kamran Khan
           </h1>
           <p className="mt-3 text-lg md:text-xl text-slate-600 dark:text-slate-300">
-            Full-Stack Developer • MERN & Java • Building secure, high-performance systems
+            Full-Stack Developer • MERN & Java • Building secure,
+            high-performance systems
+          </p>
+          <p className="flex items-center gap-2 mt-3 text-md md:text-md text-slate-600 dark:text-slate-300">
+            <Briefcase className="h-5 w-5" /> Open to Full-Time Opportunities
           </p>
           <div className="flex flex-wrap items-center gap-3 text-base text-slate-600 dark:text-slate-300 mt-4">
             <span className="inline-flex items-center gap-1">
@@ -732,7 +724,7 @@ export default function PortfolioSite() {
       {/* Github */}
       <section id="github" className="max-w-7xl mx-auto px-6 md:px-10 mb-12">
         <h2 className="text-2xl font-semibold flex items-center gap-2 mb-8 underline">
-          <SiGithub className="h-6 w-6" /> GitHub Overview
+          <SiGithub className="h-6 w-6" /> GitHub Activity
         </h2>
         <div className="p-6 rounded-2xl border border-slate-300 shadow-2xl">
           {/* Stats + Languages */}
@@ -757,7 +749,7 @@ export default function PortfolioSite() {
           </div>
 
           {/* Contribution Graph */}
-          <div className="mt-12 text-center">
+          <div className="mt-9 text-center">
             <p className="text-lg font-semibold mb-4">Contribution Activity</p>
 
             <img
