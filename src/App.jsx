@@ -726,11 +726,11 @@ export default function PortfolioSite() {
         <h2 className="text-2xl font-semibold flex items-center gap-2 mb-8 underline">
           <SiGithub className="h-6 w-6" /> GitHub Activity
         </h2>
-        <div className="p-6 rounded-2xl border border-slate-300 shadow-2xl">
+        <div className="px-6 py-8 rounded-2xl border border-slate-300 shadow-2xl">
           {/* Stats + Languages */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
             <div className="text-center">
-              <p className="text-lg font-semibold mb-4">Stats</p>
+              {/* <p className="text-lg font-semibold mb-4">Stats</p> */}
               <img
                 className="w-full max-w-md"
                 src={`https://github-stats-kamran.vercel.app/api?username=mohdkamran-khan&show_icons=true&theme=${githubTheme}&hide_border=true&v=${darkMode}&cache_seconds=86400&include_all_commits=true&hide_rank=true`}
@@ -739,7 +739,7 @@ export default function PortfolioSite() {
             </div>
 
             <div className="text-center">
-              <p className="text-lg font-semibold mb-4">Top Languages</p>
+              {/* <p className="text-lg font-semibold mb-4">Top Languages</p> */}
               <img
                 className="w-full max-w-md"
                 src={`https://github-stats-kamran.vercel.app/api/top-langs/?username=mohdkamran-khan&layout=compact&theme=${githubTheme}&hide_border=true&v=${darkMode}&cache_seconds=86400`}
@@ -749,11 +749,13 @@ export default function PortfolioSite() {
           </div>
 
           {/* Contribution Graph */}
-          <div className="mt-9 text-center">
-            <p className="text-lg font-semibold mb-4">Contribution Activity</p>
+          <div className="mt-9 py-3 px-2 md:px-14 md:py-6 md:mx-8 rounded-md bg-transparent dark:bg-[#151515]">
+            <p className="text-lg font-semibold mb-4 text-blue-500 dark:text-white">
+              Contributions
+            </p>
 
             <img
-              className="w-full max-w-4xl mx-auto"
+              className="w-full max-w-6xl mx-auto"
               src={`https://ghchart.rshah.org/${chartColor}/mohdkamran-khan?v=${darkMode}`}
               alt="GitHub Contribution Chart"
             />
