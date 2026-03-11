@@ -26,7 +26,7 @@ import {
 } from "react-icons/si";
 import { GrAchievement } from "react-icons/gr";
 
-const RESUME_URL = `${import.meta.env.BASE_URL}resume/Kamran_Resume.pdf`;
+const RESUME_URL = `${import.meta.env.BASE_URL}resume/Mohd_Kamran_Khan_Resume.pdf`;
 
 const projects = [
   {
@@ -50,10 +50,30 @@ const projects = [
       "Developed during internship. Optimized DB queries, implemented REST APIs, and integrated role-based access.",
   },
   {
-    slug: "Event-Tracker-MERN",
-    title: "Event Tracker (MERN)",
+    slug: "Blog-Application-MERN",
+    title: "Blog Application (MERN)",
     description:
-      "Simple event tracker built with MERN Stack. Features CRUD functionality & dynamic search.",
+      "Modern blogging platform built with MERN Stack. Features blog posts with CRUD functionality, image upload, comments & likes.",
+    stack: [
+      "MongoDB",
+      "Express",
+      "React",
+      "Node",
+      "Axios",
+      "Multer",
+      "Tailwind",
+      "Cloudinary",
+    ],
+    link: "#",
+    repo: "https://github.com/mohdkamran-khan/Syntecxhub_Blog_Application",
+    details:
+      "Built during Syntecxhub internship, Implemented using MERN for functionality and React/Tailwind for layout. Features responsive design and local storage for event persistence.",
+  },
+  {
+    slug: "Task-Manager-MERN",
+    title: "Task Manager (MERN)",
+    description:
+      "Simple task manager built with MERN Stack. Features CRUD functionality & dynamic search.",
     stack: [
       "MongoDB",
       "Express",
@@ -64,7 +84,7 @@ const projects = [
       "Tailwind",
     ],
     link: "#",
-    repo: "https://github.com/mohdkamran-khan/Mini-Event-Tracker",
+    repo: "https://github.com/mohdkamran-khan/Syntecxhub_Task_Manager",
     details:
       "Implemented using MERN for functionality and React/Tailwind for layout. Features responsive design and local storage for event persistence.",
   },
@@ -199,9 +219,20 @@ const skills = [
 
 const experiences = [
   {
+    role: "Frontend Developer — Intern",
+    company: "Evolko Systems Pvt Ltd",
+    period: "Mar 2026 – Present",
+    points: [
+      "Developed React based UI modules for a clinical support web application used by hundreds of active healthcare professionals, enabling real time access to patient monitoring and clinical data.",
+      "Built dashboards and workflows supporting doctors, nurses, and hospital staff, improving usability for managing critical patient records and treatment inputs.",
+      "Integrated REST APIs and implemented secure data handling for active user sessions and patient updates, ensuring reliable communication between frontend and backend services.",
+      "Improved frontend performance and error handling across patient data entry forms and monitoring panels, supporting smooth operation in high activity clinical environments.",
+    ],
+  },
+  {
     role: "Web Developer — Intern",
     company: "Syntecxhub",
-    period: "Feb 2026 – Present",
+    period: "Feb – Mar 2026",
     points: [
       "Developed a practical understanding of modern web development workflows, tools, and industry practices.",
       "Enhanced problem solving, debugging, and performance optimization skills by working on real world challenges.",
@@ -211,7 +242,7 @@ const experiences = [
   {
     role: "Frontend Developer (React) — Intern",
     company: "Skillfied Mentor",
-    period: "Dec 2025 – Present",
+    period: "Dec 2025 – Mar 2026",
     points: [
       "Strengthening my React skill.",
       "Gaining hands-on experience and contributing to real world projects.",
@@ -289,7 +320,7 @@ export default function PortfolioSite() {
       // Step 1: Trigger download
       const link = document.createElement("a");
       link.href = RESUME_URL;
-      link.download = "Kamran_Resume.pdf";
+      link.download = "Mohd_Kamran_Khan_Resume.pdf";
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -328,7 +359,7 @@ export default function PortfolioSite() {
 
       const link = document.createElement("a");
       link.href = RESUME_URL;
-      link.download = "Kamran_Resume.pdf";
+      link.download = "Mohd_Kamran_Khan_Resume.pdf";
       link.click();
     }
   };
@@ -460,7 +491,7 @@ export default function PortfolioSite() {
             <a
               href={RESUME_URL}
               onClick={handleResumeClick}
-              download="Kamran_Resume.pdf"
+              download="Mohd_Kamran_Khan_Resume.pdf"
               className="px-4 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 drop-shadow-lg shadow-lg shadow-blue-500/50 hover:bg-blue-700 flex items-center gap-2 cursor-pointer"
             >
               <Download className="h-5 w-5" /> Resume
@@ -483,7 +514,7 @@ export default function PortfolioSite() {
             <a
               href={RESUME_URL}
               onClick={handleResumeClick}
-              download="Kamran_Resume.pdf"
+              download="Mohd_Kamran_Khan_Resume.pdf"
               className="px-3 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 flex items-center gap-1 cursor-pointer text-sm"
             >
               <Download className="h-4 w-4" /> Resume
@@ -583,9 +614,9 @@ export default function PortfolioSite() {
             Full-Stack Developer • MERN & Java • Building secure,
             high-performance systems
           </p>
-          <p className="flex items-center gap-2 mt-3 text-md md:text-md text-slate-600 dark:text-slate-300">
+          {/* <p className="flex items-center gap-2 mt-3 text-md md:text-md text-slate-600 dark:text-slate-300">
             <Briefcase className="h-5 w-5" /> Open to Full-Time Opportunities
-          </p>
+          </p> */}
           <div className="flex flex-wrap items-center gap-3 text-base text-slate-600 dark:text-slate-300 mt-4">
             <span className="inline-flex items-center gap-1">
               <MapPin className="h-5 w-5" /> Lucknow, UP &nbsp;|
@@ -925,7 +956,7 @@ export default function PortfolioSite() {
               <a
                 href={RESUME_URL}
                 onClick={handleResumeClick}
-                download="Kamran_Resume.pdf"
+                download="Mohd_Kamran_Khan_Resume.pdf"
                 className="px-4 py-3 border border-gray-600 rounded-xl flex items-center gap-2 hover:scale-105 hover:shadow-2xl hover:bg-slate-50 dark:hover:bg-slate-700 cursor-pointer"
               >
                 <Download className="h-5 w-5" /> Download Resume
