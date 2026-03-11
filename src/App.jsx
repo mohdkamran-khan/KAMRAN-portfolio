@@ -637,7 +637,7 @@ export default function PortfolioSite() {
               <Phone className="h-5 w-5" /> +91 94151 95895
             </a>
           </div>
-          <div className="flex flex-wrap gap-3 lg:gap-4 md:gap-3 pt-5 justify-start items-center">
+          <div className="flex flex-wrap gap-2 lg:gap-4 md:gap-3 pt-5 justify-start items-center">
             <a
               href="https://github.com/mohdkamran-khan"
               target="_blank"
