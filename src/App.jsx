@@ -219,8 +219,8 @@ const skills = [
 
 const experiences = [
   {
-    role: "Frontend Developer — Intern",
-    company: "Evolko Systems Pvt Ltd",
+    role: "Frontend Web Developer (React) — Intern",
+    company: "Evolko Systems Pvt Ltd, Lucknow",
     period: "Mar 2026 – Present",
     points: [
       "Developed React based UI modules for a clinical support web application used by hundreds of active healthcare professionals, enabling real time access to patient monitoring and clinical data.",
@@ -230,9 +230,9 @@ const experiences = [
     ],
   },
   {
-    role: "Web Developer — Intern",
+    role: "Full Stack Web Developer (MERN) — Intern",
     company: "Syntecxhub",
-    period: "Feb – Mar 2026",
+    period: "Feb 2026 – Mar 2026",
     points: [
       "Developed a practical understanding of modern web development workflows, tools, and industry practices.",
       "Enhanced problem solving, debugging, and performance optimization skills by working on real world challenges.",
@@ -240,7 +240,7 @@ const experiences = [
     ],
   },
   {
-    role: "Frontend Developer (React) — Intern",
+    role: "Frontend Web Developer (React) — Intern",
     company: "Skillfied Mentor",
     period: "Dec 2025 – Mar 2026",
     points: [
@@ -617,6 +617,9 @@ export default function PortfolioSite() {
           {/* <p className="flex items-center gap-2 mt-3 text-md md:text-md text-slate-600 dark:text-slate-300">
             <Briefcase className="h-5 w-5" /> Open to Full-Time Opportunities
           </p> */}
+          <p className="flex items-center gap-2 mt-3 text-md md:text-md text-slate-600 dark:text-slate-300">
+            <Briefcase className="h-5 w-5" /> Frontend Web Developer, Evolko Systems Pvt Ltd
+          </p>
           <div className="flex flex-wrap items-center gap-3 text-base text-slate-600 dark:text-slate-300 mt-4">
             <span className="inline-flex items-center gap-1">
               <MapPin className="h-5 w-5" /> Lucknow, UP &nbsp;|
@@ -653,7 +656,7 @@ export default function PortfolioSite() {
             </a>
             <a
               href="#contact"
-              className="px-2 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 hover:shadow-2xl hover:bg-blue-700 flex items-center gap-2"
+              className="px-3 py-2 rounded-xl bg-blue-600 text-white hover:scale-105 hover:shadow-2xl hover:bg-blue-700 flex items-center gap-2"
             >
               <Briefcase className="h-5 w-5" /> Hire Me
             </a>
