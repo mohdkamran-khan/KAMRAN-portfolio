@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,7 +28,7 @@
       (() => {
         const theme = localStorage.getItem("theme");
         const systemDark = window.matchMedia(
-          "(prefers-color-scheme: dark)"
+          "(prefers-color-scheme: dark)",
         ).matches;
         if (theme === "dark" || (!theme && systemDark)) {
           document.documentElement.classList.add("dark");
@@ -54,7 +54,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
       media="print"
-      onload="this.media='all'"
+      onload="this.media = 'all'"
     />
     <noscript>
       <link
@@ -67,6 +67,10 @@
     <meta
       name="google-site-verification"
       content="vJztvgAqM96KF8eEoOYuc2pUvHaREEuSRgRrEIuUYx4"
+    />
+    <meta
+      name="google-site-verification"
+      content="QZlw5jsHcQWq6jgKqLpN5ToBBnoKQLEnDccQA3LktjQ"
     />
 
     <title>Kamran | FullStack Developer</title>
