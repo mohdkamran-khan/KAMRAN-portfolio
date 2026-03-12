@@ -617,8 +617,8 @@ export default function PortfolioSite() {
           {/* <p className="flex items-center gap-2 mt-3 text-md md:text-md text-slate-600 dark:text-slate-300">
             <Briefcase className="h-5 w-5" /> Open to Full-Time Opportunities
           </p> */}
-          <p className="flex items-center gap-2 mt-3 text-md md:text-md text-slate-600 dark:text-slate-300">
-            <Briefcase className="h-5 w-5" /> Frontend Web Developer, Evolko Systems Pvt Ltd
+          <p className="flex items-center gap-2 mt-3 font-semibold text-md md:text-md text-slate-800 dark:text-slate-100">
+            <Briefcase className="h-5 w-5" /> Frontend Web Developer @ Evolko Systems Pvt Ltd
           </p>
           <div className="flex flex-wrap items-center gap-3 text-base text-slate-600 dark:text-slate-300 mt-4">
             <span className="inline-flex items-center gap-1">
@@ -910,7 +910,7 @@ export default function PortfolioSite() {
             <Send className="h-6 w-6" /> Let’s connect to build something great!
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 mb-6">
-            Open to full-time roles in Full-Stack / Frontend Development. Let's
+            Open to Freelancing and Full-time roles in Full Stack / Frontend Development. Let's
             discuss how I can contribute to your team!
           </p>
 
