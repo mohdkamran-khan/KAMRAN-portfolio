@@ -205,14 +205,14 @@ const skills = [
     group: "Tools & Utilities",
     items: [
       "Git",
-      "Amazon Q Developer",
-      "Prompt Engineering",
       "Cybersecurity",
       "Stripe",
       "Cloudinary",
       "Framer Motion",
       "Form Submit",
       "SendGrid",
+      "JTrac",
+      "SVN",
     ],
   },
 ];
@@ -626,13 +626,13 @@ export default function PortfolioSite() {
               <MapPin className="h-5 w-5" /> Lucknow, UP &nbsp;|
             </span>
             <a
-              className="inline-flex items-center gap-1 cursor-pointer hover:scale-105"
+              className="inline-flex items-center gap-1 cursor-pointer hover:underline"
               href="mailto:mohdkamrankhan.dev@gmail.com"
             >
               <Mail className="h-5 w-5" /> mohdkamrankhan.dev@gmail.com &nbsp;|
             </a>
             <a
-              className="inline-flex items-center gap-1 cursor-pointer hover:scale-105"
+              className="inline-flex items-center gap-1 cursor-pointer hover:underline"
               href="tel:+919415195895"
             >
               <Phone className="h-5 w-5" /> +91 94151 95895
