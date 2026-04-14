@@ -784,7 +784,7 @@ export default function PortfolioSite() {
           </div>
 
           {/* Contribution Graph */}
-          <div className="mt-8 py-3 px-2 md:px-14 md:py-6 md:mx-8 rounded-md bg-[#FFFEFE] dark:bg-[#151515]">
+          {/* <div className="mt-8 py-3 px-2 md:px-14 md:py-6 md:mx-8 rounded-md bg-[#FFFEFE] dark:bg-[#151515]">
             <p className="text-lg font-semibold mb-4 text-blue-500 dark:text-white">
               Contributions
             </p>
@@ -794,7 +794,7 @@ export default function PortfolioSite() {
               src={`https://ghchart.rshah.org/${chartColor}/mohdkamran-khan?v=${darkMode}`}
               alt="GitHub Contribution Chart"
             />
-          </div>
+          </div> */}
         </div>
       </section>
 
